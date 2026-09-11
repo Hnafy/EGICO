@@ -10,7 +10,6 @@ import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import { useData } from './context/DataContext';
-import { buildWhatsAppLink, quoteMessageFor } from './lib/whatsapp';
 
 export default function App() {
   const { products, categories, settings, loading } = useData();
@@ -33,13 +32,6 @@ export default function App() {
     }
   }, [routeId]);
 
-  const requestQuote = (product) => {
-    window.open(
-      buildWhatsAppLink(settings.whatsapp, quoteMessageFor(product)),
-      '_blank',
-    );
-  };
-
   const handleSelectProduct = (product) => {
     navigate(`/product/${product.id || product.slug}`);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -57,7 +49,7 @@ export default function App() {
       <Navbar
         currentTab={isProductRoute ? 'product-detail' : currentTab}
         setCurrentTab={navigateToTab}
-        onRequestQuote={() => requestQuote(null)}
+        settings={settings}
       />
 
       <div className="flex-grow">
@@ -71,7 +63,7 @@ export default function App() {
           <main className="pt-20">
             <HeroSection
               featuredProduct={featuredProduct}
-              onRequestQuote={() => requestQuote(featuredProduct)}
+              settings={settings}
               onBrowseProducts={() => navigateToTab('products')}
             />
             <FeaturesBento />
@@ -89,7 +81,6 @@ export default function App() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             onSelectProduct={handleSelectProduct}
-            onRequestQuote={requestQuote}
           />
         )}
 
@@ -97,8 +88,8 @@ export default function App() {
           <ProductsCatalog
             products={products}
             categories={categories}
+            settings={settings}
             onSelectProduct={handleSelectProduct}
-            onRequestQuote={requestQuote}
           />
         )}
 

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, Menu, X, Phone } from 'lucide-react';
+import { buildWhatsAppLink, quoteMessageFor } from '../lib/whatsapp';
 
-export default function Navbar({ currentTab, setCurrentTab, onRequestQuote }) {
+export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -61,14 +62,16 @@ export default function Navbar({ currentTab, setCurrentTab, onRequestQuote }) {
         </nav>
 
         <div className="flex items-center gap-3 md:gap-4">
-          <button
-            onClick={onRequestQuote}
+          <a
+            href={buildWhatsAppLink(settings.whatsapp, quoteMessageFor(null))}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-[#25D366] text-white font-bold text-sm md:text-base px-5 md:px-6 py-2 md:py-2.5 rounded-full hover:bg-[#20bd5a] transition-all active:scale-98 shadow-sm hover:shadow-md cursor-pointer whitespace-nowrap flex items-center gap-2"
           >
             <MessageCircle className="w-4 h-4 md:w-5 md:h-5" />
             <span className="hidden sm:inline">طلب عرض سعر</span>
             <span className="sm:hidden">عرض سعر</span>
-          </button>
+          </a>
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

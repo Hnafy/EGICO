@@ -14,6 +14,7 @@ import {
   Rotate3D,
 } from 'lucide-react';
 import { ProductImage, Lightbox } from './ProductImages';
+import { buildWhatsAppLink, quoteMessageFor } from '../lib/whatsapp';
 
 const ADVANTAGE_ICONS = [Box, MonitorSmartphone, Sparkles, ShieldCheck, Zap, Layers, BadgePercent, Rotate3D];
 
@@ -23,7 +24,6 @@ export default function ProductDetailPage({
   settings,
   onBackToProducts,
   onSelectProduct,
-  onRequestQuote,
 }) {
   const galleryImages = useMemo(() => {
     if (!product || !product.images) return [];
@@ -151,13 +151,15 @@ export default function ProductDetailPage({
           {/* CTA */}
           <div className="bg-white border border-[#e1bebe] rounded-2xl p-6 sm:p-7 shadow-xs space-y-4">
             <div className="flex flex-col sm:flex-row gap-3">
-              <button
-                onClick={() => onRequestQuote(product)}
-                className="flex-1 bg-[#25D366] text-white font-bold text-base sm:text-lg py-3.5 rounded-xl hover:bg-[#20bd5a] transition-all shadow-md hover:shadow-lg active:scale-98 flex items-center justify-center gap-2 cursor-pointer"
+              <a
+                href={buildWhatsAppLink(settings.whatsapp, quoteMessageFor(product))}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 bg-[#25D366] text-white font-bold text-base sm:text-lg py-3.5 rounded-xl hover:bg-[#20bd5a] transition-all shadow-md hover:shadow-lg active:scale-98 flex items-center justify-center gap-2 cursor-pointer text-center"
               >
                 <MessageCircle className="w-5 h-5" />
                 <span>اطلب عرض سعر</span>
-              </button>
+              </a>
 
               {product.pdfUrl && (
                 <a

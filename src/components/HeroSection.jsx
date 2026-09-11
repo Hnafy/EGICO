@@ -1,7 +1,8 @@
 import React from 'react';
 import { ArrowLeft, CheckCircle2, MessageCircle, Zap, Award } from 'lucide-react';
+import { buildWhatsAppLink, quoteMessageFor } from '../lib/whatsapp';
 
-export default function HeroSection({ featuredProduct, onRequestQuote, onBrowseProducts }) {
+export default function HeroSection({ featuredProduct, settings = {}, onBrowseProducts }) {
   return (
     <section className="relative min-h-[82vh] flex items-center justify-center overflow-hidden border-b border-[#e1bebe]/40">
 
@@ -50,14 +51,16 @@ export default function HeroSection({ featuredProduct, onRequestQuote, onBrowseP
           </div>
 
           <div className="flex flex-wrap items-center gap-4 justify-start pt-4">
-            <button
-              onClick={onRequestQuote}
-              className="bg-[#25D366] text-white px-8 py-3.5 rounded-full font-bold text-base hover:bg-[#20bd5a] transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer flex items-center gap-2"
-            >
-              <MessageCircle className="w-5 h-5" />
-              <span>اطلب عرض سعر</span>
-              <ArrowLeft className="w-4 h-4" />
-            </button>
+<a
+            href={buildWhatsAppLink(settings.whatsapp, quoteMessageFor(featuredProduct))}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#25D366] text-white px-8 py-3.5 rounded-full font-bold text-base hover:bg-[#20bd5a] transition-all shadow-md hover:shadow-lg active:scale-98 cursor-pointer flex items-center gap-2"
+          >
+            <MessageCircle className="w-5 h-5" />
+            <span>اطلب عرض سعر</span>
+            <ArrowLeft className="w-4 h-4" />
+          </a>
 
             <button
               onClick={onBrowseProducts}

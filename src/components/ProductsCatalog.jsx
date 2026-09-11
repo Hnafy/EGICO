@@ -1,8 +1,9 @@
 import React, { useMemo, useState } from 'react';
 import { Search, MessageCircle, Sparkles } from 'lucide-react';
 import { ProductImage } from './ProductImages';
+import { buildWhatsAppLink, quoteMessageFor } from '../lib/whatsapp';
 
-export default function ProductsCatalog({ products, categories, onSelectProduct, onRequestQuote }) {
+export default function ProductsCatalog({ products, categories, settings = {}, onSelectProduct }) {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -123,13 +124,15 @@ export default function ProductsCatalog({ products, categories, onSelectProduct,
                     التفاصيل
                   </button>
 
-                  <button
-                    onClick={() => onRequestQuote(item)}
-                    className="px-4 py-2 text-xs sm:text-sm font-bold text-white bg-[#25D366] hover:bg-[#20bd5a] rounded-xl shadow-xs hover:shadow-md transition-all active:scale-95 flex items-center gap-1.5 cursor-pointer"
+                  <a
+                    href={buildWhatsAppLink(settings.whatsapp, quoteMessageFor(item))}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-xs sm:text-sm font-bold text-white bg-[#25D366] hover:bg-[#20bd5a] rounded-xl shadow-xs hover:shadow-md transition-all active:scale-95 flex items-center gap-1.5 cursor-pointer text-center"
                   >
                     <MessageCircle className="w-4 h-4" />
                     <span>اطلب عرض سعر</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
