@@ -1,0 +1,1455 @@
+[
+  {
+    "id": "tij1800-mini-plus",
+    "slug": "tij1800-mini-plus",
+    "name": "TIJ1800-MINI Plus",
+    "title": "TIJ1800-MINI Plus Thermal Inkjet Printer",
+    "category": "Thermal Inkjet Printer",
+    "brand": "IEGCO (Integrated Engineering Group)",
+    "summary": "Compact and portable industrial inkjet printer featuring a 4.3-inch touchscreen, automatic ink identification, and high-speed multi-line printing capabilities.",
+    "pdfUrl": "/pdfs/products/brochure%20TIJ1800%20MIni%20Plus%20Coding%20%26%20Marking%20Machine%20.pdf",
+    "images": {
+      "main": "/images/products/tij1800-mini-plus/main.png",
+      "gallery": [
+        "/images/products/tij1800-mini-plus/view-1.png",
+        "/images/products/tij1800-mini-plus/view-2.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Compact-size and Portable",
+        "description": "A portable compact sized hand jet with 4.3-inch touchscreen which provides an enhanced user interface."
+      },
+      {
+        "title": "Friendly UI and Interactive Design",
+        "description": "Simple and easy user interface for easy operation."
+      },
+      {
+        "title": "Automatic Ink Identification",
+        "description": "Automatically identifies and selects the proper firing for the best print quality."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Easy Operation",
+        "points": [
+          "Touch screen display with simple application interface.",
+          "Operate and maintain without any special training.",
+          "Only the empty cartridge needs to be replaced when ink is depleted."
+        ]
+      },
+      {
+        "category": "Printing Features",
+        "points": [
+          "High speed printing.",
+          "Supports text, variable data (time/date, shift code, counter), barcode, and logo.",
+          "Printing lines up to 6 lines limited to 0.5 inches."
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "General Specifications",
+        "fields": [
+          {
+            "label": "Display",
+            "value": "4.3 Touch color LCD with back light"
+          },
+          {
+            "label": "Languages",
+            "value": "Arabic, English, Spanish, Portuguese, Russian, Turkish, and Chinese"
+          },
+          {
+            "label": "Electrical Requirements",
+            "value": "AC 100 V~240, 50/60Hz"
+          },
+          {
+            "label": "Mounting Orientation",
+            "value": "Horizontal or Downside"
+          },
+          {
+            "label": "Operating Temperature",
+            "value": "15°C"
+          },
+          {
+            "label": "Optional Accessories",
+            "value": "45 C"
+          },
+          {
+            "label": "Encoder",
+            "value": "Provide high print quality on unstable encoder"
+          },
+          {
+            "label": "Photocell",
+            "value": "Provide high print quality on unstable encoder"
+          },
+          {
+            "label": "Alarm Kit",
+            "value": "Alert users in the event of an incident"
+          }
+        ]
+      },
+      {
+        "groupName": "Cartridge Specifications",
+        "fields": [
+          {
+            "label": "Ink Type",
+            "value": "Solvent Base or water-base cartridges"
+          },
+          {
+            "label": "Print Distance",
+            "value": "1-5 mm recommended print distance"
+          },
+          {
+            "label": "Print Height",
+            "value": "Up to 6 lines and limited to 12.7mm (0.5\")"
+          },
+          {
+            "label": "Resolution",
+            "value": "(50–900) dpi"
+          },
+          {
+            "label": "Print Capability",
+            "value": "Alphanumeric, logos, date/time, counter, shift code"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "dp2000",
+    "slug": "dp2000",
+    "name": "DP2000",
+    "title": "DP2000 Large Character Printer",
+    "category": "Large Character Inkjet Printer",
+    "brand": "IEGCO (Integrated Engineering Group)",
+    "summary": "Economic industrial DOD large character printer designed for stable performance in harsh, dusty environments with up to 90 mm printing height per head.",
+    "pdfUrl": "/pdfs/products/IEGCO_DP2000_Data_Sheet_2026.pdf",
+    "images": {
+      "main": "/images/products/dp2000/main.png",
+      "gallery": [
+        "/images/products/dp2000/front-view.png",
+        "/images/products/dp2000/heads-view.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Economic Industrial Design",
+        "description": "Designed and manufactured as a new economic model of industrial large character inkjet printer with strong anti-interference ability."
+      },
+      {
+        "title": "Harsh Environment Capability",
+        "description": "Comes with air source, refined in perfect performance, especially suitable for on-site poor environments and heavy dust occasions."
+      },
+      {
+        "title": "Large Printing Height & Modular Combination",
+        "description": "DOD coding and marking system for texts, data or logos up to 90 mm for each print head. Multiple print heads can be combined for larger printing."
+      },
+      {
+        "title": "Versatile Nozzle Configurations",
+        "description": "Easy-to-use 7-, 16- or 32-nozzles print heads meeting all industrial marking and coding requirements."
+      },
+      {
+        "title": "High-Speed Conveyor Support",
+        "description": "Suitable for deployment on fast conveyor belts."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Printability & Data",
+        "points": [
+          "Prints Text, Image, lot box code, Counter, Date/time, Expiry Date, Julian Date, Shift code.",
+          "BCD support for selecting printing messages."
+        ]
+      },
+      {
+        "category": "Performance Features",
+        "points": [
+          "Print height up to 4 lines (26mm/line (7dots)) or 2 Lines (60mm/line (16dots)).",
+          "Adjustable dot size to give good print quality.",
+          "High print speed range: 0.1 - 200 m/min.",
+          "Encoder support for high print quality on variable conveyor speed."
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Hardware & Interface Specifications",
+        "fields": [
+          {
+            "label": "Display",
+            "value": "8 inches Touch Color LCD with back light"
+          },
+          {
+            "label": "User-interface",
+            "value": "Simple and easy-to-use operating system"
+          },
+          {
+            "label": "Input Device",
+            "value": "Touch Screen, and Ethernet Interface"
+          },
+          {
+            "label": "Data Interface",
+            "value": "OTG port, and Ethernet port"
+          },
+          {
+            "label": "LCD Indicator",
+            "value": "Alarm, ink low, print, run, and counter"
+          },
+          {
+            "label": "Operating Temperature",
+            "value": "10°C – 45°C"
+          },
+          {
+            "label": "Mounting Orientation",
+            "value": "Horizontal or downside (Multiple direction)"
+          },
+          {
+            "label": "Electrical Requirements",
+            "value": "AC 200V ~ 240V, 50/60Hz"
+          },
+          {
+            "label": "Data Cable",
+            "value": "Standard length 3m (others customized)"
+          },
+          {
+            "label": "Photocell",
+            "value": "External sensor provide more reliable operation"
+          }
+        ]
+      },
+      {
+        "groupName": "Printing & Ink Specifications",
+        "fields": [
+          {
+            "label": "Print Distance",
+            "value": "5–30 mm recommended print distance"
+          },
+          {
+            "label": "Ink Type",
+            "value": "MEK, Propanol, and Water-base"
+          },
+          {
+            "label": "Font Size Options",
+            "value": "5x5, 5x7, and 10x16"
+          },
+          {
+            "label": "Printability",
+            "value": "Text, Image, lot box code, Counter, Date/time, Expiry Date, Julian Date, Shift code"
+          },
+          {
+            "label": "Print Height",
+            "value": "Up to 4 lines (26mm/line (7dots)) or 2 Lines (60mm/line (16dots))"
+          },
+          {
+            "label": "Dot Size",
+            "value": "Adjustable to give good print quality"
+          },
+          {
+            "label": "Print Speed",
+            "value": "Speed (0.1-200 m/min)"
+          },
+          {
+            "label": "Available Languages",
+            "value": "Arabic, English, Spanish, Portuguese, Russian, Turkish, and Chinese"
+          },
+          {
+            "label": "Encoder",
+            "value": "Provide high print quality on variable conveyor speed"
+          },
+          {
+            "label": "BCD",
+            "value": "Provide selecting printing messages"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tij1800-a200",
+    "slug": "tij1800-a200",
+    "name": "TIJ1800-A200",
+    "title": "TIJ1800-A200 Thermal Inkjet Printer",
+    "category": "Thermal Inkjet Printer",
+    "brand": "IEGCO (Integrated Engineering Group)",
+    "summary": "HP TIJ2.5 technology advanced thermal inkjet printer featuring a 4.3-inch touch screen, multi-language operating system, and high-speed auto-adjust printing up to 800m/min.",
+    "pdfUrl": "/pdfs/products/brochure(A200)%20Coding%20%26%20Marking%20Machine-.pdf",
+    "images": {
+      "main": "/images/products/tij1800-a200/main.png",
+      "gallery": [
+        "/images/products/tij1800-a200/line-setup.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "HP TIJ2.5 Advanced Technology",
+        "description": "Utilizes HP TIJ2.5 technology with advanced user interface and multi-language support for precise industrial coding."
+      },
+      {
+        "title": "Smart Speed & Resolution Auto-Adjustment",
+        "description": "Supports 50 to 900 DPI resolution, with automatic machine adjustment for print speed and resolution."
+      },
+      {
+        "title": "Ultra High Speed Printing",
+        "description": "Capable of high-speed production line printing up to 800m/min depending on resolution settings."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Easy Operation",
+        "points": [
+          "Simple application interface on 4.3-inch touch screen display.",
+          "Operate and maintain without any special training.",
+          "Only empty cartridges require replacement when ink is depleted."
+        ]
+      },
+      {
+        "category": "Printing Feature",
+        "points": [
+          "High speed printing capability.",
+          "Supports text, variable data (time/date, shift code, counter), barcodes, and logos.",
+          "Printing lines up to 6 lines limited to 0.5 inches."
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Technical & Hardware Specifications",
+        "fields": [
+          {
+            "label": "Display",
+            "value": "4.3 Touch color LCD with back light"
+          },
+          {
+            "label": "User - Interface",
+            "value": "Simple and easy -to- use operating system"
+          },
+          {
+            "label": "Input Device",
+            "value": "Touch Screen, USB keyboard, and Ethernet"
+          },
+          {
+            "label": "Data Interface",
+            "value": "OTG port, Ethernet port"
+          },
+          {
+            "label": "LCD Indicator",
+            "value": "Alarm, ink low, run, estimation print count, counter"
+          },
+          {
+            "label": "Operating Temperature",
+            "value": "15°C–45°C"
+          },
+          {
+            "label": "Mounting Orientation",
+            "value": "Horizontal or downside"
+          },
+          {
+            "label": "Electrical Requirements",
+            "value": "AC 100V ~ 240V, 50/60Hz"
+          },
+          {
+            "label": "Dimensions (LxWxH)",
+            "value": "Controller (142x107x47.5mm), Print head (111x60x80/108mm)"
+          },
+          {
+            "label": "Weight",
+            "value": "Controller (700 gram), Print head (400 gram)"
+          },
+          {
+            "label": "Data Cable",
+            "value": "Standard length 125cm"
+          },
+          {
+            "label": "Photocell",
+            "value": "External sensor provide more reliable"
+          }
+        ]
+      },
+      {
+        "groupName": "Printing & Features Specifications",
+        "fields": [
+          {
+            "label": "Print Distance",
+            "value": "1-5 mm recommended print distance"
+          },
+          {
+            "label": "Ink",
+            "value": "Solvent base or water base cartridge"
+          },
+          {
+            "label": "Print Content",
+            "value": "Text, Image, lot box code, Counter, Date / time, Expiry Date, Julian"
+          },
+          {
+            "label": "Printability",
+            "value": "Data, shift code, Barcodes (EAN8, EAN13, UPC-A, UPC-E, codes, Code 128, Data Matrix, QR code)"
+          },
+          {
+            "label": "Print Height",
+            "value": "Up to 6 lines and limited to 12.7mm (0.5\")"
+          },
+          {
+            "label": "Resolution",
+            "value": "Resolution (50~900dpi), machine adjusts speed and resolution automatically"
+          },
+          {
+            "label": "Print Speed",
+            "value": "Speed (0.1~800m/min) depend on resolution"
+          },
+          {
+            "label": "Languages",
+            "value": "Arabic, English, Spanish, Portuguese, Russian, Turkish, and Chinese"
+          },
+          {
+            "label": "Ink Management",
+            "value": "Automatic recognition ink type and ink parameters"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "co2-laser-marking-machine",
+    "slug": "co2-laser-marking-machine",
+    "name": "CO2 LASER MARKING MACHINE",
+    "title": "CO2 Laser Marking Machine",
+    "category": "Laser Marking Machine",
+    "brand": "IEGCO",
+    "summary": "High-quality CO2 laser marking machine designed for high-speed, reliable encoding across a wide range of materials including cardboard, glass, PET, and plastics.",
+    "pdfUrl": "/pdfs/products/CO2.pdf",
+    "images": {
+      "main": "/images/products/co2-laser-marking-machine/main.png",
+      "gallery": [
+        "/images/products/co2-laser-marking-machine/view-1.png",
+        "/images/products/co2-laser-marking-machine/view-2.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Maintenance-Free Operation",
+        "description": "The air-cooled laser source is virtually maintenance-free, dramatically reducing downtime."
+      },
+      {
+        "title": "Extended Service Life",
+        "description": "Longer life of the laser source, with 40,000 hours of Mean Time Between Failure (MTBF)."
+      },
+      {
+        "title": "High Precision & Throughput",
+        "description": "Standard 100*100 marking area, as well as high marking accuracy and edge sharpness for higher throughput."
+      },
+      {
+        "title": "Robust IP54 Protection",
+        "description": "Standard IP54 protection class, able to sustain stable operation in dusty and humid harsh environments."
+      },
+      {
+        "title": "Flexible Production Line Integration",
+        "description": "A variety of working distance options, 0–360° printed mounting direction, production line integration more flexible."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Wavelength Options",
+        "points": [
+          "9.3 micron: Particularly suitable for marking on PET plastic, typically beverage products.",
+          "10.2 micron: Suitable for laminating cartons commonly used in many cosmetic and pharmaceutical applications.",
+          "10.6 micron: Suitable for most standard consumer packaged goods applications such as paper, plastic, wood products and glass."
+        ]
+      },
+      {
+        "category": "Application Scenarios",
+        "points": [
+          "Conveyor Integration",
+          "Slitter Integration",
+          "Labeling Machine Integration"
+        ]
+      },
+      {
+        "category": "Standard Accessories",
+        "points": [
+          "Touch panel",
+          "Lifting bracket",
+          "Power cable",
+          "Signal cable",
+          "Photoelectric sensors",
+          "Encoders"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Product Parameters",
+        "fields": [
+          {
+            "label": "Lasers",
+            "value": "Sealed CO2 RF Laser"
+          },
+          {
+            "label": "Power",
+            "value": "30W"
+          },
+          {
+            "label": "Laser Wavelength",
+            "value": "9.3µm / 10.2µm / 10.6µm"
+          },
+          {
+            "label": "Repetition Rate",
+            "value": "0–250kHz"
+          },
+          {
+            "label": "Radiation Field",
+            "value": "4x (standard size)"
+          },
+          {
+            "label": "Laser Class",
+            "value": "Class 4 laser products – IEC60825-1 compliant"
+          },
+          {
+            "label": "Marking Direction",
+            "value": "0–360°"
+          },
+          {
+            "label": "Marking Area",
+            "value": "Standard 110*110mm (can be customized)"
+          },
+          {
+            "label": "Scribing Speed",
+            "value": "Up to 20m/s"
+          },
+          {
+            "label": "Working Distance",
+            "value": "365mm"
+          },
+          {
+            "label": "Spot Size",
+            "value": "1.8mm (±0.2mm)"
+          },
+          {
+            "label": "Marking Content",
+            "value": "1D, 2D barcode, logos, Chinese, English and numbers"
+          },
+          {
+            "label": "User Interface",
+            "value": "10\" full color touch screen"
+          },
+          {
+            "label": "Communication Interface",
+            "value": "RJ45, RS232, RS485, USB, SD card"
+          },
+          {
+            "label": "Rated Voltage",
+            "value": "200–240V 50/60Hz"
+          },
+          {
+            "label": "Power of the Whole Machine",
+            "value": "≤300W"
+          },
+          {
+            "label": "Weight",
+            "value": "16.5kg"
+          },
+          {
+            "label": "Cooling Method",
+            "value": "Air cooling"
+          },
+          {
+            "label": "Protection Class",
+            "value": "IP54 (customizable)"
+          },
+          {
+            "label": "Environmental Temperature",
+            "value": "5–40°C"
+          },
+          {
+            "label": "Humidity Range",
+            "value": "Relative humidity <90%, non condensing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fibre-laser-marking-machine",
+    "slug": "fibre-laser-marking-machine",
+    "name": "FIBRE LASER MARKING MACHINE",
+    "title": "Fibre Laser Marking Machine",
+    "category": "Laser Marking Machine",
+    "brand": "IEGCO",
+    "summary": "High-precision fibre laser marking machine designed for permanent, high-contrast coding on metals, electronics, cables, and high-density packaging materials.",
+    "pdfUrl": "/pdfs/products/FIBRE%20LASER%20MARKING%20MACHINE%202026.pdf",
+    "images": {
+      "main": "/images/products/fibre-laser-marking-machine/main.png",
+      "gallery": [
+        "/images/products/fibre-laser-marking-machine/view-1.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Longer Laser Source Life",
+        "description": "Longer laser source life with 100,000 hours MTBF."
+      },
+      {
+        "title": "Virtually Maintenance-Free",
+        "description": "Air-cooled laser source is virtually maintenance-free, with no wearing parts, dramatically reducing downtime."
+      },
+      {
+        "title": "High Precision & Throughput",
+        "description": "Standard 100*100 marking area, as well as high marking accuracy and edge sharpness for higher throughput."
+      },
+      {
+        "title": "Robust IP54 Protection Rating",
+        "description": "Standard IP54 protection rating, capable of continuous and stable operation in dusty and humid harsh environments."
+      },
+      {
+        "title": "Flexible Line Integration",
+        "description": "A variety of working distance options, 0–360 printhead mounting direction, production line integration more flexible."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Application Scenarios",
+        "points": [
+          "Industrial Parts: Permanent marking on metal components, tools and mechanical parts.",
+          "Electronics: High-precision marking on chips, circuits and electronic components.",
+          "Cables & Wires: Clear, durable marking on cables and wires for traceability.",
+          "Cans & Metal Packaging: High-contrast marking on metal cans and packaging for branding and dates.",
+          "Glass & Bottles: Elegant and precise marking on glass surfaces for logos, codes and dates.",
+          "Plastic Parts: Permanent marking on plastic components and caps."
+        ]
+      },
+      {
+        "category": "Standard Accessories",
+        "points": [
+          "Touch panel",
+          "Lifting bracket",
+          "Power cable",
+          "Signal cable",
+          "Photoelectric sensors",
+          "Encoders"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Technical Specifications",
+        "fields": [
+          {
+            "label": "Laser Type",
+            "value": "Fibre Q-switched lasers"
+          },
+          {
+            "label": "Laser Power Options",
+            "value": "20W / 30W / 50W / 100W"
+          },
+          {
+            "label": "Wavelength",
+            "value": "1064 nm"
+          },
+          {
+            "label": "Pulse Frequency Range",
+            "value": "30–60 KHz"
+          },
+          {
+            "label": "Conditioning Space",
+            "value": "10, 20, 30 (optional)"
+          },
+          {
+            "label": "Laser Class",
+            "value": "Class 4 laser products – IEC60825-1 compliant"
+          },
+          {
+            "label": "Marking Direction",
+            "value": "0°–360°"
+          },
+          {
+            "label": "Marking Area",
+            "value": "Standard 110*110mm (can be customized)"
+          },
+          {
+            "label": "Marking Speed",
+            "value": "Up to 20m/s"
+          },
+          {
+            "label": "Marking Depth",
+            "value": "Up to 1 mm (depends on material)"
+          },
+          {
+            "label": "Working Distance",
+            "value": "110–275 mm (automatically)"
+          },
+          {
+            "label": "Spot Size",
+            "value": "≤ 0.01 mm"
+          },
+          {
+            "label": "Minimum Line Width",
+            "value": "0.01 mm"
+          },
+          {
+            "label": "Character Size",
+            "value": "0.2 mm"
+          },
+          {
+            "label": "Repeat Accuracy",
+            "value": "±0.002 mm"
+          },
+          {
+            "label": "Marking Content",
+            "value": "1D, 2D barcodes, text, Chinese, English and numbers"
+          },
+          {
+            "label": "User Interface",
+            "value": "10\" full colour touch screen"
+          },
+          {
+            "label": "Communication Interface",
+            "value": "RJ45, RS232, RS485, USB"
+          },
+          {
+            "label": "Power Supply",
+            "value": "AC 100–240V, 50/60Hz"
+          },
+          {
+            "label": "Power of the Whole Machine",
+            "value": "≤200W"
+          },
+          {
+            "label": "Weight",
+            "value": "≈ 32kg"
+          },
+          {
+            "label": "Cooling System",
+            "value": "Built-in air cooled"
+          },
+          {
+            "label": "Protection Class",
+            "value": "IP54"
+          },
+          {
+            "label": "Supported Languages",
+            "value": "Multiple (incl. Arabic, English, etc.)"
+          },
+          {
+            "label": "File Formats",
+            "value": "PLT, DXF, BMP, JPG, AI, DST, etc."
+          },
+          {
+            "label": "Operating Temperature",
+            "value": "0–40°C"
+          },
+          {
+            "label": "Humidity Range",
+            "value": "Relative humidity <70%, non-condensing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "handheld-fibre-laser-marking-machine",
+    "slug": "handheld-fibre-laser-marking-machine",
+    "name": "HANDHELD FIBRE LASER MARKING MACHINE",
+    "title": "Handheld Fibre Laser Marking Machine",
+    "category": "Laser Marking Machine",
+    "brand": "IEGCO",
+    "summary": "Compact, highly portable desktop handheld fibre laser marking machine designed for high-precision, fast-focusing coding across metals and non-metal materials.",
+    "pdfUrl": "/pdfs/products/Handheld%20Fibre.pdf",
+    "images": {
+      "main": "/images/products/handheld-fibre-laser-marking-machine/main.png",
+      "gallery": [
+        "/images/products/handheld-fibre-laser-marking-machine/view-1.png",
+        "/images/products/handheld-fibre-laser-marking-machine/view-2.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "100% Portable",
+        "description": "Compact design; the whole machine is small and portable, suitable for use in different workstations or on-site."
+      },
+      {
+        "title": "Cost-Effective & Continuous Operation",
+        "description": "Can be operated continuously for 24 hours with high efficiency, improving production efficiency, saving costs, and delivering stable performance."
+      },
+      {
+        "title": "High-Quality Light Source",
+        "description": "Advanced fibre laser with high stability, no consumables, maintenance-free operation, and a design life of about 100,000 working hours."
+      },
+      {
+        "title": "User-Friendly Interface",
+        "description": "Powerful control software supporting multi-language switching, easy-to-learn operation, and support for text, patterns, QR codes, barcodes, serial numbers, and graphics."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Application Scenarios",
+        "points": ["Studios", "Street stall economy", "Outdoor activity"]
+      },
+      {
+        "category": "Standard Accessories",
+        "points": ["Lifting bracket", "Power cable", "Data cable"]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Product Parameters",
+        "fields": [
+          {
+            "label": "Lasers",
+            "value": "Fibre Optic Laser"
+          },
+          {
+            "label": "Power",
+            "value": "20W"
+          },
+          {
+            "label": "Laser Wavelength",
+            "value": "1064nm"
+          },
+          {
+            "label": "Pulse Frequency Range",
+            "value": "27–60KHz"
+          },
+          {
+            "label": "Confining Space",
+            "value": "1D, 2D, 3D (optional)"
+          },
+          {
+            "label": "Laser Class",
+            "value": "Class 4 laser products – IEC60825-1 compliant"
+          },
+          {
+            "label": "Marking Direction",
+            "value": "0–360°"
+          },
+          {
+            "label": "Marking Area",
+            "value": "Standard 110*110mm"
+          },
+          {
+            "label": "Scribing Speed",
+            "value": "Up to 20m/s"
+          },
+          {
+            "label": "Working Distance",
+            "value": "106±2mm"
+          },
+          {
+            "label": "Spot Size",
+            "value": "8mm"
+          },
+          {
+            "label": "Marking Content",
+            "value": "1D, 2D barcodes, logos, Chinese, English and numbers"
+          },
+          {
+            "label": "Operating System",
+            "value": "Windows, iOS, Android"
+          },
+          {
+            "label": "Communication Interface",
+            "value": "USB, Mobile phone, WiFi"
+          },
+          {
+            "label": "Rated Voltage",
+            "value": "220V 50/60Hz"
+          },
+          {
+            "label": "Power of the Whole Machine",
+            "value": "≤280W"
+          },
+          {
+            "label": "Weight",
+            "value": "6kg"
+          },
+          {
+            "label": "Cooling Method",
+            "value": "Air cooling"
+          },
+          {
+            "label": "Protection Class",
+            "value": "IP55"
+          },
+          {
+            "label": "Environmental Temperature",
+            "value": "0°–40°C"
+          },
+          {
+            "label": "Humidity Range",
+            "value": "Relative humidity <90%, non-condensing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lt800-series-small-character-inkjet-printer",
+    "slug": "lt800-series-small-character-inkjet-printer",
+    "name": "LT800 SERIES",
+    "title": "LT800 Series Small Character Inkjet Printer",
+    "category": "Small Character Inkjet Printer",
+    "brand": "IEGCO",
+    "summary": "High-performance, reliable small character inkjet printer featuring a 7-inch touch screen, IP55 protection, modular ink system, and high-speed multi-line printing up to 430m/min.",
+    "pdfUrl": "/pdfs/products/IEGCO_LT800_CIJ_Data_Sheet_2026.pdf",
+    "images": {
+      "main": "/images/products/lt800-series-small-character-inkjet-printer/main.png",
+      "gallery": [
+        "/images/products/lt800-series-small-character-inkjet-printer/view-1.png",
+        "/images/products/lt800-series-small-character-inkjet-printer/view-2.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "High Performance & High Speed",
+        "description": "Delivers high-speed printing up to 430m/min with clear, multi-line coding capabilities."
+      },
+      {
+        "title": "Smart & Simple Operation",
+        "description": "Features a 7-inch touch screen with a user-friendly Linux-based WYSIWYG interface."
+      },
+      {
+        "title": "Modular Ink System",
+        "description": "Integrated InkCore design with modular components, fewer spare parts, and easy maintenance."
+      },
+      {
+        "title": "Reliable Cabinet & Printhead",
+        "description": "Stainless steel cabinet with Teflon coating for easy cleaning, IP55 industrial protection, and a constant temperature printhead to reduce nozzle blocking."
+      },
+      {
+        "title": "Cost-Effective Operation",
+        "description": "Efficient ink system with low consumption and smart cartridge technology to maximize savings."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "User Experience & Features",
+        "points": [
+          "New Message Editor: Visual message editing, matrix code, QR code & barcode support with inserted variables.",
+          "USB Host Swap Function: Flexible data saving, USB disk software upgrades, and external data input.",
+          "Multi-language System: Up to 14 language menu options and keyboard support with remote control monitoring.",
+          "Automatic Cleaning & Viscosity Adjustment: Built-in automatic cleaning system and smart viscosity adjustment."
+        ]
+      },
+      {
+        "category": "Key Highlights",
+        "points": [
+          "Up to 34 Dots resolution and 5 printing lines",
+          "Print distance range from 2mm to 30mm (10mm optimal)",
+          "Large memory storage capacity for 1000+ messages",
+          "360° All-round printing direction"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Technical Specifications",
+        "fields": [
+          {
+            "label": "Models Available",
+            "value": "LT800, LT810, LT800 Pro, LT810 Pro, LT880 (HRS)"
+          },
+          {
+            "label": "Cabinet Material",
+            "value": "Precision coating (LT800/LT800 Pro/LT880), Stainless steel (LT810/LT810 Pro)"
+          },
+          {
+            "label": "Printing Speed",
+            "value": "Up to 200m/min (LT800/LT810), 344m/min (LT800 Pro/LT810 Pro), 430m/min (LT880 HRS)"
+          },
+          {
+            "label": "Printing Performance",
+            "value": "1–4 Lines (7x5 matrix), 1–5 Lines (5x5 matrix)"
+          },
+          {
+            "label": "Font Height",
+            "value": "1–15mm"
+          },
+          {
+            "label": "Printing Distance",
+            "value": "2mm to 30mm (Best: 10mm)"
+          },
+          {
+            "label": "Operating System",
+            "value": "Linux System / LT-Touch unique System"
+          },
+          {
+            "label": "User Interface",
+            "value": "7\" full color touch screen"
+          },
+          {
+            "label": "Print Content",
+            "value": "English, Chinese, Arabic Numbers, Serial number, Barcode, Shift, DM/QR Code, UPC A&E, EAN 8 & 13, GS1, Logo, UCC/EAN 128, Code 128, Code 39, Code 125, Automatic date/time/expiry date, Special characters, etc."
+          },
+          {
+            "label": "Extra Memory / Interfaces",
+            "value": "USB, RS485, Ethernet (Pro/HRS models)"
+          },
+          {
+            "label": "System Languages",
+            "value": "Up to 14+ languages (Chinese, English, Korean, Russian, Polish, Persian, Arabic, Spanish, German, Indonesian, Vietnamese, Croatian, Thai, Portuguese, Italian, etc.)"
+          },
+          {
+            "label": "Memory Storage",
+            "value": "1000+ Messages"
+          },
+          {
+            "label": "Protection Class",
+            "value": "IP55"
+          },
+          {
+            "label": "Printhead",
+            "value": "Super soft conduit (length 3m), Constant temperature, 60µm (50µm for LT880 HRS)"
+          },
+          {
+            "label": "Printing Direction",
+            "value": "360° All-round printing"
+          },
+          {
+            "label": "Cartridge Volume",
+            "value": "Ink: 500ml, Make-up: 750ml"
+          },
+          {
+            "label": "Operating Temperature / Humidity",
+            "value": "0–45°C, 0–95% Relative Humidity (non-condensing)"
+          },
+          {
+            "label": "Power Supply",
+            "value": "AC100–240V, 50/60Hz, 80VA"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lt900-continuous-inkjet-printer",
+    "slug": "lt900-continuous-inkjet-printer",
+    "name": "LT 900",
+    "title": "LT 900 Continuous Inkjet Printer",
+    "category": "Continuous Inkjet Printer",
+    "brand": "IEGCO",
+    "summary": "Smart, stable, and reliable continuous inkjet printer equipped with a 10.1-inch touch screen, modular inkcore design, and high-speed printing up to 344 m/min.",
+    "pdfUrl": "/pdfs/products/IEGCO_LT900_CIJ_Data_Sheet_2026.pdf",
+    "images": {
+      "main": "/images/products/lt900-continuous-inkjet-printer/main.png",
+      "gallery": [
+        "/images/products/lt900-continuous-inkjet-printer/view-1.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Easy Operation",
+        "description": "10.1-Inch Touch Screen Multi-language Interface and keyboard Support Customized Font Import."
+      },
+      {
+        "title": "Innovative Printhead",
+        "description": "New Integrated printhead, provides more stable & perfect print with 344 m/min ultra-high speed printing."
+      },
+      {
+        "title": "IoT Industry 4.0",
+        "description": "RS485, USB & Ethernet Connections Support Data Matrix & QR Code Printing, Remote Upgrade of Software & Firmware."
+      },
+      {
+        "title": "Stable Ink System",
+        "description": "Modular inkcore design, easy to replace with Auto-Pressure Control."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Core Features",
+        "points": [
+          "Easy Operation with 10.1-inch touch screen",
+          "High Speed Printing up to 344 m/min",
+          "Smart Coding with Data Matrix and QR code support",
+          "Stable Performance with auto-pressure control and IP55 protection",
+          "Remote Upgrade of Software & Firmware over IoT connections"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Technical Specifications",
+        "fields": [
+          {
+            "label": "Printing Performance",
+            "value": "1–4 Lines (7X5 matrix), 1–5 Lines (5X5 matrix), Max. Speed = 344m/min @5X5"
+          },
+          {
+            "label": "Font Matrix",
+            "value": "Single-Line: 5x5, 7x5, 9x6, 12x8, 16x11, 19x14, 24x17, 32x22; Twin-Line: 5x5, 7x5, 9x6, 12x8, 16x11; 3 Lines: 5x5, 7x5, 9x6; 4 Lines: 5x5, 7x5; 5 Lines: 5x5"
+          },
+          {
+            "label": "Font Height",
+            "value": "1–15mm"
+          },
+          {
+            "label": "Print Content",
+            "value": "English, Chinese, Arabic Numbers, Serial number, Barcode, Shift, DM/QR Code, Automatic date, time, expiry date, Special characters, etc."
+          },
+          {
+            "label": "Extra Memory / Communication Interface",
+            "value": "USB, RS485, Ethernet"
+          },
+          {
+            "label": "System Language",
+            "value": "Up to 14 languages system menu and keyboard, customizable language"
+          },
+          {
+            "label": "Memory Storage",
+            "value": "1000+"
+          },
+          {
+            "label": "Protection Class",
+            "value": "IP55"
+          },
+          {
+            "label": "Printhead",
+            "value": "Super soft, length 3m, constant temperature, 60µm"
+          },
+          {
+            "label": "Power",
+            "value": "AC100–240V, 50/60Hz, 80VA"
+          },
+          {
+            "label": "Cartridge Volume",
+            "value": "Ink (500ml), Make-up (750ml)"
+          },
+          {
+            "label": "Printing Direction",
+            "value": "360° All-round printing"
+          },
+          {
+            "label": "Temperature / Humidity Range",
+            "value": "0–45°C, 0–95% Relative Humidity, Non-condensing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mini-laser-marking-machine",
+    "slug": "mini-laser-marking-machine",
+    "name": "MINI LASER MARKING MACHINE",
+    "title": "Mini Laser Marking Machine - Fiber Optic Compact Powerhouse 20W/30W",
+    "category": "Laser Marking Machine",
+    "brand": "IEGCO",
+    "summary": "Compact, all-in-one fiber optic laser marking machine available in 20W and 30W models, offering high-precision, long-lasting reliability, and flexible operation across various industrial applications.",
+    "pdfUrl": "/pdfs/products/MINI%20Laser%20Marking%20Machine.pdf",
+    "images": {
+      "main": "/images/products/mini-laser-marking-machine/main.png",
+      "gallery": [
+        "/images/products/mini-laser-marking-machine/view-1.png",
+        "/images/products/mini-laser-marking-machine/view-2.png",
+        "/images/products/mini-laser-marking-machine/view-3.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Compact & Robust Design",
+        "description": "Space-saving integrated structure for flexible operation in various environments."
+      },
+      {
+        "title": "Easy to Learn & Operate",
+        "description": "Intuitive interface with built-in wizard for quick setup and control."
+      },
+      {
+        "title": "High Precision & Consistency",
+        "description": "Premium components and craftsmanship delivering high-precision marking results."
+      },
+      {
+        "title": "High-Speed Marking Performance",
+        "description": "Delivers fast, efficient marking speeds up to 12000mm/s."
+      },
+      {
+        "title": "Available in 20W & 30W Models",
+        "description": "Multiple power options (F-20W and F-30W) to suit specific marking requirements."
+      },
+      {
+        "title": "Excellent Price-to-Performance Ratio",
+        "description": "Superior quality at a competitive price offering a cost-effective laser marking solution."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Core Features",
+        "points": [
+          "All-in-One Compact Design with space-saving integrated structure",
+          "User-Friendly Operation with built-in setup wizard and intuitive control",
+          "Reliable Performance with a fiber laser service life of over 100,000 hours",
+          "Flexible Applications for text, logos, serial numbers, barcodes, and QR codes"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Overall Machine Features",
+        "fields": [
+          {
+            "label": "Machine Material",
+            "value": "Sandblasted aluminum + anodized metal painting"
+          },
+          {
+            "label": "Laser",
+            "value": "Fiber laser generator with a service life of over 100,000 hours"
+          },
+          {
+            "label": "Laser Wavelength",
+            "value": "1064nm"
+          },
+          {
+            "label": "Actual Output Power",
+            "value": "F-20W: ≥20W | F-30W: ≥30W"
+          },
+          {
+            "label": "Marking Speed",
+            "value": "≤12000mm/s"
+          },
+          {
+            "label": "Main Control",
+            "value": "Connected to computer industrial control machine"
+          },
+          {
+            "label": "Cooling System",
+            "value": "Normal temperature air cooling"
+          },
+          {
+            "label": "Minimum Line Width",
+            "value": "0.0012mm"
+          },
+          {
+            "label": "Repeat Positioning Accuracy",
+            "value": "0.003mm"
+          },
+          {
+            "label": "Marking Range",
+            "value": "110*110mm (Standard) / 150*150mm (Minimize ø)"
+          },
+          {
+            "label": "Positioning Method",
+            "value": "Red light indication"
+          },
+          {
+            "label": "Markable Character Height",
+            "value": "Any number of lines within the marking range"
+          },
+          {
+            "label": "Production Line Speed",
+            "value": "0–130m/min related to material"
+          },
+          {
+            "label": "Multi-language Support",
+            "value": "English, Korean, Chinese, Russian, etc."
+          }
+        ]
+      },
+      {
+        "groupName": "Software & System Parameters",
+        "fields": [
+          {
+            "label": "Management Authority",
+            "value": "Multi-user management authority"
+          },
+          {
+            "label": "Operating System",
+            "value": "Windows System"
+          },
+          {
+            "label": "Input Mode",
+            "value": "Static state"
+          },
+          {
+            "label": "Reserved Signal",
+            "value": "Foot Switch"
+          },
+          {
+            "label": "Data Protection",
+            "value": "Power-off data protection function"
+          },
+          {
+            "label": "Typeface",
+            "value": "Chinese, English, numbers, traditional Chinese and other standard font libraries"
+          },
+          {
+            "label": "File Formats",
+            "value": "BMP, DXF, HPGL, JPEG, PLT"
+          },
+          {
+            "label": "Bar codes",
+            "value": "CODE39, CODE128, CODE126, QR code (optional)"
+          }
+        ]
+      },
+      {
+        "groupName": "Physical & Operating Parameters",
+        "fields": [
+          {
+            "label": "Power Supply",
+            "value": "Standard External power supply 220V / 50Hz"
+          },
+          {
+            "label": "Power Consumption",
+            "value": "≤500W"
+          },
+          {
+            "label": "Net Machine Weight",
+            "value": "Classic: 10kg, Laser Head: 6.2kg, Total weight after packaging: 16.25kg"
+          },
+          {
+            "label": "External Dimensions",
+            "value": "Package: 620*410*360mm, 21kg"
+          },
+          {
+            "label": "Environmental Demand",
+            "value": "External operating environment: Dry ≤90%; Non-condensing; Vibration-free"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "uv900-series-uv-laser-marking-machine",
+    "slug": "uv900-series-uv-laser-marking-machine",
+    "name": "UV LASER MARKING MACHINE-UV900 SERIES",
+    "title": "UV Laser Marking Machine - UV900 Series",
+    "category": "Laser Marking Machine",
+    "brand": "IEGCO",
+    "summary": "Ultra-compact UV laser marking machine featuring IP65 protection and a 70mm short focal length optical system, designed for high-precision, thermal-damage-free marking on plastic films and packaging materials.",
+    "pdfUrl": "/pdfs/products/uv900-series-uv-laser-marking-machine.pdf",
+    "images": {
+      "main": "/images/products/uv900-series-uv-laser-marking-machine/main.png",
+      "gallery": [
+        "/images/products/uv900-series-uv-laser-marking-machine/view-1.png",
+        "/images/products/uv900-series-uv-laser-marking-machine/view-2.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Compact Size for Easy Installation",
+        "description": "Small and compact body design reduces volume by 30%, allowing easy replacement of existing inkjet and TTO printers in limited space."
+      },
+      {
+        "title": "Zero Consumable Costs",
+        "description": "Adopts photolithography technology for coding without consumables, eliminating ribbon/printhead replacement, ink, solvents, and regular maintenance."
+      },
+      {
+        "title": "Easy Operation & Plug and Play",
+        "description": "Equipped with an intelligent control system with plug-and-play functionality, greatly reducing operation threshold and training costs."
+      },
+      {
+        "title": "Long-Lasting, Non-Fading Marking",
+        "description": "Laser marking effectively withstands oil pollution, dust, alcohol wiping, high-temperature sterilization, and handling friction."
+      },
+      {
+        "title": "Sealed IP65 Protection",
+        "description": "Sealed design with IP65 protection ensures reliable performance in harsh production environments."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Application Scenarios",
+        "points": ["Pillow machines", "Vertical machines"]
+      },
+      {
+        "category": "Standard Accessories",
+        "points": [
+          "Industrial chiller",
+          "Bracket",
+          "Power cable",
+          "Signal cable",
+          "Photoelectric sensors",
+          "Encoders",
+          "Touch panel"
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Product Parameters",
+        "fields": [
+          {
+            "label": "Lasers",
+            "value": "UV nanosecond solid-state lasers"
+          },
+          {
+            "label": "Power",
+            "value": "5W"
+          },
+          {
+            "label": "Laser Wavelength",
+            "value": "355nm"
+          },
+          {
+            "label": "Repetition Rate",
+            "value": "10-200KHz"
+          },
+          {
+            "label": "Radiation Field",
+            "value": "6x"
+          },
+          {
+            "label": "Laser Class",
+            "value": "Class 4 laser product – IEC60825-1 compliant"
+          },
+          {
+            "label": "Marking Direction",
+            "value": "0-360°"
+          },
+          {
+            "label": "Marking Area",
+            "value": "110*110mm"
+          },
+          {
+            "label": "Scribing Speed",
+            "value": "Up to 20m/s"
+          },
+          {
+            "label": "Working Distance",
+            "value": "70mm"
+          },
+          {
+            "label": "Spot Size",
+            "value": "0.8mm (±0.2mm)"
+          },
+          {
+            "label": "Marking Content",
+            "value": "1D, 2D barcodes, icons, Chinese, English and numbers"
+          },
+          {
+            "label": "User Interface",
+            "value": "10\" full color touch screen"
+          },
+          {
+            "label": "Communication Interface",
+            "value": "RJ45, RS232, RS485, USB, SD card"
+          },
+          {
+            "label": "Rated Voltage",
+            "value": "200–240V 50/60Hz"
+          },
+          {
+            "label": "Power of the Whole Machine",
+            "value": "≤1KW (including water tank)"
+          },
+          {
+            "label": "Weight",
+            "value": "Laser 8kg, Industrial chiller 13kg"
+          },
+          {
+            "label": "Cooling Method",
+            "value": "Water cooling"
+          },
+          {
+            "label": "Protection Class",
+            "value": "IP65"
+          },
+          {
+            "label": "Environmental Temperature",
+            "value": "0–35°C"
+          },
+          {
+            "label": "Humidity Range",
+            "value": "Relative humidity <90%, non-condensing"
+          }
+        ]
+      }
+    ]
+  }
+]

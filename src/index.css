@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-tajawal: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'IBM Plex Sans', monospace;
+  }
+
+  body {
+    font-family: var(--font-tajawal);
+    background-color: #fff8f8;
+    color: #1e1b1c;
+    direction: rtl;
+  }
+}
+
+.font-tajawal {
+  font-family: 'Tajawal', sans-serif;
+}
+
+.font-mono-plex {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f5eced;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8c1c3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a6192e;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "المجموعة الهندسية المتكاملة - IEG",
+  "description": "حلول متكاملة لطباعة الباركود والملصقات بأعلى معايير الجودة والسرعة وأسعار تنافسية",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
