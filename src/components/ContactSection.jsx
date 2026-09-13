@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Phone,
   Mail,
@@ -7,32 +7,36 @@ import {
   Clock,
   Send,
   CheckCircle,
-} from 'lucide-react';
-import { buildWhatsAppLink, contactMessageFor } from '../lib/whatsapp';
+} from "lucide-react";
+import { buildWhatsAppLink, contactMessageFor } from "../lib/whatsapp";
 
 export default function ContactSection({ products = [], settings = {} }) {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    company: '',
-    product: products[0]?.name || '',
-    message: '',
+    name: "",
+    phone: "",
+    company: "",
+    product: products[0]?.name || "",
+    message: "",
   });
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.phone) {
-      alert('يرجى إدخال الاسم ورقم الهاتف على الأقل.');
+      alert("يرجى إدخال الاسم ورقم الهاتف على الأقل.");
       return;
     }
-    window.open(buildWhatsAppLink(settings.whatsapp, contactMessageFor(formData)), '_blank');
+    window.open(
+      buildWhatsAppLink(settings.whatsapp, contactMessageFor(formData)),
+      "_blank",
+    );
     setSubmitted(true);
   };
 
   const handleWhatsAppDirect = () => {
-    const text = 'مرحباً IEG، أود الاستفسار بخصوص أنظمة الترميز والطباعة الصناعية.';
-    window.open(buildWhatsAppLink(settings.whatsapp, text), '_blank');
+    const text =
+      "مرحباً IEG، أود الاستفسار بخصوص أنظمة الترميز والطباعة الصناعية.";
+    window.open(buildWhatsAppLink(settings.whatsapp, text), "_blank");
   };
 
   return (
@@ -42,8 +46,8 @@ export default function ContactSection({ products = [], settings = {} }) {
           تواصل مع المجموعة الهندسية المتكاملة
         </h1>
         <p className="text-base text-[#594040] max-w-2xl">
-          فريق المبيعات والدعم الفني متواجد لمساعدتك في اختيار نظام الترميز والطباعة
-          المثالي لخط إنتاجك.
+          فريق المبيعات والدعم الفني متواجد لمساعدتك في اختيار نظام الترميز
+          والطباعة المثالي لخط إنتاجك.
         </p>
       </div>
 
@@ -60,9 +64,14 @@ export default function ContactSection({ products = [], settings = {} }) {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-[#8d7070] block font-bold">الهاتف والخط الساخن:</span>
-                  <a href="tel:01061356169" className="font-bold text-[#1e1b1c] hover:text-[#81001c] text-base font-mono">
-                    {settings.phoneDisplay || '01061356169'}
+                  <span className="text-xs text-[#8d7070] block font-bold">
+                    الهاتف والخط الساخن:
+                  </span>
+                  <a
+                    href="tel:01034451738"
+                    className="font-bold text-[#1e1b1c] hover:text-[#81001c] text-base font-mono"
+                  >
+                    {settings.phoneDisplay || "01034451738"}
                   </a>
                 </div>
               </div>
@@ -72,7 +81,9 @@ export default function ContactSection({ products = [], settings = {} }) {
                   <MessageSquare className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-[#8d7070] block font-bold">خدمة عملاء واتساب:</span>
+                  <span className="text-xs text-[#8d7070] block font-bold">
+                    خدمة عملاء واتساب:
+                  </span>
                   <button
                     onClick={handleWhatsAppDirect}
                     className="font-bold text-[#1e1b1c] hover:text-[#25D366] text-sm underline cursor-pointer"
@@ -87,9 +98,14 @@ export default function ContactSection({ products = [], settings = {} }) {
                   <Mail className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-[#8d7070] block font-bold">البريد الإلكتروني:</span>
-                  <a href={`mailto:${settings.email || 'info@ieg-eg.com'}`} className="font-medium text-[#1e1b1c] hover:text-[#81001c]">
-                    {settings.email || 'info@ieg-eg.com'}
+                  <span className="text-xs text-[#8d7070] block font-bold">
+                    البريد الإلكتروني:
+                  </span>
+                  <a
+                    href={`mailto:${settings.email || "info@ieg-eg.com"}`}
+                    className="font-medium text-[#1e1b1c] hover:text-[#81001c]"
+                  >
+                    {settings.email || "info@ieg-eg.com"}
                   </a>
                 </div>
               </div>
@@ -99,9 +115,11 @@ export default function ContactSection({ products = [], settings = {} }) {
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-[#8d7070] block font-bold">العنوان والمقر:</span>
+                  <span className="text-xs text-[#8d7070] block font-bold">
+                    العنوان والمقر:
+                  </span>
                   <span className="font-medium text-[#1e1b1c]">
-                    {settings.address || 'القاهرة - جمهورية مصر العربية'}
+                    {settings.address || "القاهرة - جمهورية مصر العربية"}
                   </span>
                 </div>
               </div>
@@ -111,9 +129,11 @@ export default function ContactSection({ products = [], settings = {} }) {
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
-                  <span className="text-xs text-[#8d7070] block font-bold">مواعيد العمل:</span>
+                  <span className="text-xs text-[#8d7070] block font-bold">
+                    مواعيد العمل:
+                  </span>
                   <span className="font-medium text-[#1e1b1c]">
-                    {settings.workingHours || 'السبت - الخميس: 9:00 ص - 6:00 م'}
+                    {settings.workingHours || "السبت - الخميس: 9:00 ص - 6:00 م"}
                   </span>
                 </div>
               </div>
@@ -121,9 +141,12 @@ export default function ContactSection({ products = [], settings = {} }) {
           </div>
 
           <div className="bg-[#fbf1f2] rounded-2xl p-6 border border-[#e1bebe] text-right space-y-2">
-            <h4 className="font-bold text-sm text-[#81001c]">التوصيل والشحن:</h4>
+            <h4 className="font-bold text-sm text-[#81001c]">
+              التوصيل والشحن:
+            </h4>
             <p className="text-xs text-[#594040] leading-relaxed">
-              {settings.deliverySpeed || 'توريد وتركيب الأجهزة في أسرع وقت لضمان عدم توقف خطوط إنتاجك.'}
+              {settings.deliverySpeed ||
+                "توريد وتركيب الأجهزة في أسرع وقت لضمان عدم توقف خطوط إنتاجك."}
             </p>
           </div>
         </div>
@@ -135,10 +158,12 @@ export default function ContactSection({ products = [], settings = {} }) {
                 <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
                   <CheckCircle className="w-10 h-10" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#1e1b1c]">تم فتح محادثة واتساب بنجاح!</h3>
+                <h3 className="text-2xl font-bold text-[#1e1b1c]">
+                  تم فتح محادثة واتساب بنجاح!
+                </h3>
                 <p className="text-sm text-[#594040] max-w-md mx-auto">
-                  أُرسل طلب عرض السعر عبر واتساب. سيتواصل معك مسؤول المبيعات خلال دقائق
-                  بأفضل عرض وتوافر مخزون.
+                  أُرسل طلب عرض السعر عبر واتساب. سيتواصل معك مسؤول المبيعات
+                  خلال دقائق بأفضل عرض وتوافر مخزون.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -155,25 +180,33 @@ export default function ContactSection({ products = [], settings = {} }) {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-bold text-[#1e1b1c] mb-1.5">الاسم بالكامل *</label>
+                    <label className="block text-xs font-bold text-[#1e1b1c] mb-1.5">
+                      الاسم بالكامل *
+                    </label>
                     <input
                       type="text"
                       required
                       placeholder="أدخل اسمك الكريم"
                       value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, name: e.target.value })
+                      }
                       className="w-full p-3 bg-[#fbf1f2] border border-[#e1bebe] rounded-xl text-sm text-[#1e1b1c] focus:outline-none focus:border-[#81001c] focus:bg-white"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#1e1b1c] mb-1.5">رقم الهاتف / الواتساب *</label>
+                    <label className="block text-xs font-bold text-[#1e1b1c] mb-1.5">
+                      رقم الهاتف / الواتساب *
+                    </label>
                     <input
                       type="tel"
                       required
                       placeholder="010XXXXXXXX"
                       value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
                       className="w-full p-3 bg-[#fbf1f2] border border-[#e1bebe] rounded-xl text-sm text-[#1e1b1c] focus:outline-none focus:border-[#81001c] focus:bg-white text-left font-mono"
                       dir="ltr"
                     />
@@ -182,21 +215,29 @@ export default function ContactSection({ products = [], settings = {} }) {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-bold text-[#1e1b1c] mb-1.5">اسم الشركة أو المصنع</label>
+                    <label className="block text-xs font-bold text-[#1e1b1c] mb-1.5">
+                      اسم الشركة أو المصنع
+                    </label>
                     <input
                       type="text"
                       placeholder="مثال: مصنع الأمل، خط إنتاج..."
                       value={formData.company}
-                      onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, company: e.target.value })
+                      }
                       className="w-full p-3 bg-[#fbf1f2] border border-[#e1bebe] rounded-xl text-sm text-[#1e1b1c] focus:outline-none focus:border-[#81001c] focus:bg-white"
                     />
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold text-[#1e1b1c] mb-1.5">المنتج المطلوب</label>
+                    <label className="block text-xs font-bold text-[#1e1b1c] mb-1.5">
+                      المنتج المطلوب
+                    </label>
                     <select
                       value={formData.product}
-                      onChange={(e) => setFormData({ ...formData, product: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, product: e.target.value })
+                      }
                       className="w-full p-3 bg-[#fbf1f2] border border-[#e1bebe] rounded-xl text-sm text-[#1e1b1c] focus:outline-none focus:border-[#81001c] focus:bg-white cursor-pointer"
                     >
                       {products.map((p) => (
@@ -219,13 +260,17 @@ export default function ContactSection({ products = [], settings = {} }) {
                     rows={4}
                     placeholder="اكتب تفاصيل الطلب، الكميات، أو طبيعة خط الإنتاج..."
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     className="w-full p-3 bg-[#fbf1f2] border border-[#e1bebe] rounded-xl text-sm text-[#1e1b1c] focus:outline-none focus:border-[#81001c] focus:bg-white"
                   ></textarea>
                 </div>
 
                 <div className="pt-2 flex items-center justify-between">
-                  <span className="text-xs text-[#8d7070]">* سيتم إرسال طلبك عبر واتساب مباشرة</span>
+                  <span className="text-xs text-[#8d7070]">
+                    * سيتم إرسال طلبك عبر واتساب مباشرة
+                  </span>
                   <button
                     type="submit"
                     className="bg-[#a6192e] text-white font-bold text-sm sm:text-base px-8 py-3 rounded-full hover:bg-[#81001c] transition-all shadow-md active:scale-98 flex items-center gap-2 cursor-pointer"

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { MessageCircle, Menu, X, Phone } from 'lucide-react';
-import { buildWhatsAppLink, quoteMessageFor } from '../lib/whatsapp';
+import React, { useState, useEffect } from "react";
+import { MessageCircle, Menu, X, Phone } from "lucide-react";
+import { buildWhatsAppLink, quoteMessageFor } from "../lib/whatsapp";
 
 export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
   const [scrolled, setScrolled] = useState(false);
@@ -10,34 +10,34 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { id: 'home', label: 'الرئيسية' },
-    { id: 'products', label: 'المنتجات' },
-    { id: 'about', label: 'من نحن' },
-    { id: 'contact', label: 'اتصل بنا' },
+    { id: "home", label: "الرئيسية" },
+    { id: "products", label: "المنتجات" },
+    { id: "about", label: "من نحن" },
+    { id: "contact", label: "اتصل بنا" },
   ];
 
   const handleNavClick = (tabId) => {
     setCurrentTab(tabId);
     setMobileMenuOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <header
       id="main-header"
       className={`fixed top-0 w-full z-50 bg-[#fff8f8]/95 backdrop-blur-md border-b border-[#e1bebe]/60 transition-all duration-300 ${
-        scrolled ? 'shadow-md bg-white' : 'shadow-xs'
+        scrolled ? "shadow-md bg-white" : "shadow-xs"
       }`}
     >
       <div className="flex flex-row-reverse justify-between items-center px-4 sm:px-8 md:px-12 h-20 max-w-7xl mx-auto">
         <div
           className="flex items-center cursor-pointer"
-          onClick={() => handleNavClick('home')}
+          onClick={() => handleNavClick("home")}
         >
           <img src="/logo.png" alt="IEG Logo" className="h-14" />
         </div>
@@ -52,7 +52,7 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
                 className={`transition-all font-semibold cursor-pointer text-sm lg:text-base px-2 py-1.5 relative ${
                   isActive
                     ? 'text-[#81001c] font-bold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#81001c]'
-                    : 'text-[#594040] hover:text-[#81001c]'
+                    : "text-[#594040] hover:text-[#81001c]"
                 }`}
               >
                 {item.label}
@@ -78,7 +78,11 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
             className="md:hidden text-[#1e1b1c] p-2 rounded-lg hover:bg-[#f5eced]"
             aria-label="القائمة"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
       </div>
@@ -92,8 +96,8 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
                 onClick={() => handleNavClick(item.id)}
                 className={`py-2.5 px-3 rounded-lg text-right font-medium text-base transition-colors ${
                   currentTab === item.id
-                    ? 'bg-[#fbf1f2] text-[#81001c] font-bold'
-                    : 'text-[#594040] hover:bg-[#f5eced]'
+                    ? "bg-[#fbf1f2] text-[#81001c] font-bold"
+                    : "text-[#594040] hover:bg-[#f5eced]"
                 }`}
               >
                 {item.label}
@@ -102,11 +106,11 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
             <div className="pt-3 border-t border-[#e9e0e1] flex items-center justify-between">
               <span className="text-xs text-[#5d5e60]">للاستفسار السريع:</span>
               <a
-                href="tel:01061356169"
+                href="tel:01034451738"
                 className="flex items-center gap-1.5 text-xs text-[#81001c] font-bold"
               >
                 <Phone className="w-3.5 h-3.5" />
-                01061356169
+                01034451738
               </a>
             </div>
           </nav>
