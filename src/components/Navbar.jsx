@@ -106,11 +106,11 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
             <div className="pt-3 border-t border-[#e9e0e1] flex items-center justify-between">
               <span className="text-xs text-[#5d5e60]">للاستفسار السريع:</span>
               <a
-                href="tel:01034451738"
+                href="tel:01220997663"
                 className="flex items-center gap-1.5 text-xs text-[#81001c] font-bold"
               >
                 <Phone className="w-3.5 h-3.5" />
-                01034451738
+                01220997663
               </a>
             </div>
           </nav>

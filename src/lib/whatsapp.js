@@ -1,4 +1,4 @@
-const FALLBACK_PHONE = "+201034451738";
+const FALLBACK_PHONE = "+201220997663";
 
 export function normalizePhone(phone) {
   return String(phone || FALLBACK_PHONE).replace(/[^\d]/g, "");

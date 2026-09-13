@@ -117,10 +117,10 @@ export default function Footer({ settings = {}, onNavigate }) {
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#81001c] flex-shrink-0" />
                 <a
-                  href={`tel:${settings.phoneDisplay || "01034451738"}`}
+                  href={`tel:${settings.phoneDisplay || "01220997663"}`}
                   className="hover:text-[#81001c] font-mono"
                 >
-                  {settings.phoneDisplay || "01034451738"}
+                  {settings.phoneDisplay || "01220997663"}
                 </a>
               </li>
               <li className="flex items-center gap-2">

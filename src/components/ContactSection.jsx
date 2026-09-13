@@ -68,10 +68,10 @@ export default function ContactSection({ products = [], settings = {} }) {
                     الهاتف والخط الساخن:
                   </span>
                   <a
-                    href="tel:01034451738"
+                    href="tel:01220997663"
                     className="font-bold text-[#1e1b1c] hover:text-[#81001c] text-base font-mono"
                   >
-                    {settings.phoneDisplay || "01034451738"}
+                    {settings.phoneDisplay || "01220997663"}
                   </a>
                 </div>
               </div>
