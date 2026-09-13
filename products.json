@@ -1,5 +1,110 @@
 [
   {
+    "id": "tij1800-hand-thermal-inkjet-printer",
+    "slug": "tij1800-hand-thermal-inkjet-printer",
+    "name": "TIJ1800-Hand Thermal Inkjet Printer",
+    "title": "TIJ1800-Hand Thermal Inkjet Printer",
+    "category": "Thermal Inkjet Printer",
+    "brand": "IEGCO",
+    "summary": "Compact and portable hand-held thermal inkjet printer equipped with a 4.3-inch touchscreen, automatic ink identification, and capability to print up to 6 lines of text and barcodes.",
+    "pdfUrl": "/pdfs/products/brochure_TIJ1800_Hand_Coding&Marking_Machine.pdf",
+    "images": {
+      "main": "/images/products/tij1800-hand-thermal-inkjet-printer/main.jpeg",
+      "gallery": [
+        "/images/products/tij1800-hand-thermal-inkjet-printer/view-1.jpeg",
+        "/images/products/tij1800-hand-thermal-inkjet-printer/view-2.jpeg"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Compact-size and Portable",
+        "description": "A portable compact sized hand jet with 4.3-inch touchscreen which provides an enhanced user interface."
+      },
+      {
+        "title": "Friendly UI and Interactive Design",
+        "description": "Simple and easy user interface for easy operation."
+      },
+      {
+        "title": "Automatic Ink Identification",
+        "description": "Automatically identifies and selects the proper firing for the best print quality."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Easy Operation",
+        "points": [
+          "Touch screen display with simple application interface.",
+          "Operable and maintainable without special training.",
+          "Easy replacement of depleted cartridges."
+        ]
+      },
+      {
+        "category": "Printing Features",
+        "points": [
+          "High speed printing capability.",
+          "Supports printing text, variable data (time/date, shift code, counter), barcodes, and logos.",
+          "Supports up to 6 print lines limited to 0.5\" (12.7mm)."
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "General Specifications",
+        "fields": [
+          {
+            "label": "Display",
+            "value": "4.3\" Touch color LCD with back light"
+          },
+          {
+            "label": "Languages",
+            "value": "Arabic, English, Spanish, Portuguese, Russian, Turkish, and Chinese"
+          },
+          {
+            "label": "Battery",
+            "value": "16.8 V, 2600 mAh"
+          },
+          {
+            "label": "Adaptor",
+            "value": "AC 100 V~240V, 50/60 Hz"
+          },
+          {
+            "label": "Mounting Orientation",
+            "value": "Horizontal or Downside"
+          },
+          {
+            "label": "Operating Temperature",
+            "value": "15°C - 45°C"
+          }
+        ]
+      },
+      {
+        "groupName": "Cartridge & Printing Specifications",
+        "fields": [
+          {
+            "label": "Ink Type",
+            "value": "Solvent Base or water-base cartridges"
+          },
+          {
+            "label": "Print Distance",
+            "value": "1-5 mm recommended print distance"
+          },
+          {
+            "label": "Print Height",
+            "value": "Up to 6 lines and limited to 12.7mm (0.5\")"
+          },
+          {
+            "label": "Resolution",
+            "value": "(50-900) dpi"
+          },
+          {
+            "label": "Print Capability",
+            "value": "Alphanumeric, logos, date/time, counter, shift code"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "tij1800-mini-plus",
     "slug": "tij1800-mini-plus",
     "name": "TIJ1800-MINI Plus",
@@ -276,9 +381,7 @@
     "pdfUrl": "/pdfs/products/brochure(A200)%20Coding%20%26%20Marking%20Machine-.pdf",
     "images": {
       "main": "/images/products/tij1800-a200/main.png",
-      "gallery": [
-        "/images/products/tij1800-a200/line-setup.png"
-      ]
+      "gallery": ["/images/products/tij1800-a200/line-setup.png"]
     },
     "advantages": [
       {
@@ -579,9 +682,7 @@
     "pdfUrl": "/pdfs/products/FIBRE%20LASER%20MARKING%20MACHINE%202026.pdf",
     "images": {
       "main": "/images/products/fibre-laser-marking-machine/main.png",
-      "gallery": [
-        "/images/products/fibre-laser-marking-machine/view-1.png"
-      ]
+      "gallery": ["/images/products/fibre-laser-marking-machine/view-1.png"]
     },
     "advantages": [
       {
@@ -1030,9 +1131,7 @@
     "pdfUrl": "/pdfs/products/IEGCO_LT900_CIJ_Data_Sheet_2026.pdf",
     "images": {
       "main": "/images/products/lt900-continuous-inkjet-printer/main.png",
-      "gallery": [
-        "/images/products/lt900-continuous-inkjet-printer/view-1.png"
-      ]
+      "gallery": ["/images/products/lt900-continuous-inkjet-printer/view-1.png"]
     },
     "advantages": [
       {
