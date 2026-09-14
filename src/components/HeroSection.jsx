@@ -22,7 +22,7 @@ export default function HeroSection({ featuredProduct, settings = {}, onBrowsePr
           <div className="inline-flex items-center gap-2 bg-[#fbf1f2] border border-[#e1bebe] px-3.5 py-1.5 rounded-full shadow-xs">
             <span className="w-2 h-2 rounded-full bg-[#81001c] animate-pulse"></span>
             <span className="text-xs md:text-sm font-semibold text-[#81001c]">
-              الموزع والوكيل الهندسي المعتمد في مصر
+              المجموعة الهندسيه المتكاملة
             </span>
           </div>
 

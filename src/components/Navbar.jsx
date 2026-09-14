@@ -39,7 +39,7 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
           className="flex items-center cursor-pointer"
           onClick={() => handleNavClick("home")}
         >
-          <img src="/logo.png" alt="IEG Logo" className="h-14" />
+          <img src="/logo.png" alt="IEG Logo" className="h-18" />
         </div>
 
         <nav className="hidden md:flex items-center gap-8 dir-rtl">
