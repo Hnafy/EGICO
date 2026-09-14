@@ -1,0 +1,187 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "getQuote": "Get a Quote",
+    "quote": "Quote",
+    "menu": "Menu",
+    "quickInquiry": "Quick inquiry:"
+  },
+  "hero": {
+    "badge": "Integrated Engineering Group",
+    "heading": "Complete Barcode & Label Printing Solutions",
+    "description": "High-quality industrial coding and printing systems for factories and production lines, from thermal printers to laser marking machines, with technical support and installation.",
+    "warranty": "100% Certified Warranty",
+    "delivery": "Immediate Factory Supply",
+    "support": "Free Support & Installation",
+    "ctaQuote": "Request a Quote",
+    "browseProducts": "Browse Products",
+    "mostPopular": "Most Popular"
+  },
+  "catalog": {
+    "badge": "IEG Product Catalog",
+    "heading": "Industrial Coding & Printing Systems",
+    "description": "Thermal and large-character printers, CO2, Fibre and UV laser marking machines, and integrated coding solutions for production lines, with technical support and installation.",
+    "searchPlaceholder": "Search model, category, or use...",
+    "all": "All",
+    "details": "Details",
+    "quote": "Request a Quote",
+    "noResults": "No results matching your search",
+    "noResultsHint": "Try different keywords or select another category.",
+    "resetSearch": "Reset Search"
+  },
+  "product": {
+    "breadcrumbProducts": "Products",
+    "clickToZoom": "Click to zoom",
+    "downloadPdf": "Download PDF Catalog",
+    "quoteNote": "You'll receive an official quote and delivery date via WhatsApp within minutes",
+    "featuresTab": "Features & Uses",
+    "specsTab": "Technical Specifications",
+    "overviewPrefix": "Overview of",
+    "noSpecs": "No specifications recorded for this product.",
+    "galleryTitle": "Real photos from different angles",
+    "relatedProducts": "Related Products",
+    "viewAll": "View All Products",
+    "details": "Details"
+  },
+  "features": {
+    "title": "Why Choose Our Group?",
+    "subtitle": "We offer the best solutions combining high quality and competitive pricing to ensure your business keeps running.",
+    "quality": {
+      "title": "High Quality",
+      "desc": "The latest printing technologies to ensure unmatched clarity and precision in every label, with support for global barcode standards and 2D QR codes."
+    },
+    "pricing": {
+      "title": "Competitive Prices",
+      "desc": "We offer the best value for your investment with flexible options for every budget, plus exclusive discounts for factories and bulk orders."
+    },
+    "techSupport": {
+      "title": "Outstanding Support",
+      "desc": "A specialized engineering team ready to answer your questions, train your staff, and resolve any technical issue immediately."
+    },
+    "speed": {
+      "title": "Fast Delivery",
+      "desc": "We deliver and install equipment and supply printing consumables as quickly as possible so your business and production lines never stop."
+    },
+    "deliveryTime": "24 - 48 hours",
+    "deliveryNote": "Average delivery speed in Egypt"
+  },
+  "about": {
+    "companyName": "Integrated Engineering Group (IEG)",
+    "description": "The leading company in Egypt specializing in supplying and integrating barcode printing systems, automated coding and labeling solutions for factories and retailers.",
+    "browseCatalog": "Browse Device Catalog",
+    "consultation": "Request Engineering Consultation",
+    "vision": {
+      "title": "Our Vision",
+      "desc": "To be the first technology and engineering partner for all industrial and commercial sectors in Egypt and the Middle East, providing smart and reliable printing and tracking solutions."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "desc": "To supply our customers with the best global barcode printing equipment while providing the highest level of technical support, spare parts and production supplies at competitive prices."
+    },
+    "values": {
+      "title": "Core Values",
+      "desc": "Engineering precision, commitment to delivery schedules, full transparency, and a focus on the success and continuity of our customers' businesses."
+    },
+    "distinguishes": "What Sets IEG Apart",
+    "dealers": {
+      "title": "Certified Dealers & Distributors",
+      "desc": "We supply world-leading brands such as Zebra, Honeywell, Xprinter and Bixolon."
+    },
+    "factory": {
+      "title": "Integrated Sticker Factory",
+      "desc": "Production lines for cutting and processing sticker rolls in various sizes and materials."
+    },
+    "maintenance": {
+      "title": "Certified Engineering Maintenance Center",
+      "desc": "Specialized engineers for repairing thermal printheads and circuit boards."
+    }
+  },
+  "contact": {
+    "title": "Contact IEG",
+    "subtitle": "Our sales and technical support team is ready to help you choose the ideal coding and printing system for your production line.",
+    "directContact": "Direct Contact Information",
+    "phoneLabel": "Phone & Hotline:",
+    "whatsappLabel": "WhatsApp Support:",
+    "chatNow": "Chat with us on WhatsApp now",
+    "emailLabel": "Email:",
+    "addressLabel": "Address:",
+    "hoursLabel": "Working Hours:",
+    "shipping": "Delivery & Shipping:",
+    "shippingDesc": "Fast delivery and installation of equipment to ensure your production lines never stop.",
+    "formTitle": "Request a quote or ask a question — directly via WhatsApp",
+    "nameLabel": "Full Name *",
+    "namePlaceholder": "Enter your full name",
+    "phoneLabel2": "Phone / WhatsApp Number *",
+    "companyLabel": "Company or Factory Name",
+    "companyPlaceholder": "E.g. Al-Amal Factory, production line...",
+    "productLabel": "Product of Interest",
+    "customConsultation": "Custom consultation / production line integration",
+    "detailsLabel": "Order or Quantity Details",
+    "detailsPlaceholder": "Write your order details, quantities, or production line requirements...",
+    "whatsappNote": "* Your request will be sent directly via WhatsApp",
+    "sendWhatsApp": "Send via WhatsApp",
+    "successTitle": "WhatsApp chat opened successfully!",
+    "successMsg": "Your quote request has been sent via WhatsApp. A sales manager will contact you within minutes with the best offer and availability.",
+    "sendAnother": "Send Another Inquiry",
+    "validationAlert": "Please enter at least your name and phone number."
+  },
+  "footer": {
+    "companyName": "Integrated Engineering Group (IEG)",
+    "description": "Integrated engineering solutions for barcode and label printing, supplying printers and production consumables with the highest standards of quality and reliability.",
+    "quickLinks": "Quick Links",
+    "aboutCompany": "About the Company",
+    "productsBarcode": "Products & Barcode Printers",
+    "home": "Home",
+    "customQuote": "Custom Quote Request",
+    "legal": "Legal & Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "technicalSupport": "Technical Support & Maintenance",
+    "contactUs": "Contact Us",
+    "directWhatsApp": "Direct WhatsApp Chat",
+    "copyright": "All Rights Reserved.",
+    "certified": "Officially Certified"
+  },
+  "whatsapp": {
+    "customerService": "IEG Customer Service",
+    "availableNow": "Available for instant reply",
+    "welcome": "Welcome to Integrated Engineering Group! How can we help you today with industrial printers and coding systems?",
+    "typeMessage": "Type your message...",
+    "startChat": "Start WhatsApp Chat",
+    "contactWhatsApp": "Contact via WhatsApp",
+    "defaultQuote": "Hello IEG,\nI would like to request a quote for one of your products. Please contact me.",
+    "greeting": "Hello IEG,",
+    "quoteIntro": "I would like to request a quote for the following product:",
+    "product": "Product",
+    "category": "Category",
+    "quoteRequest": "Please provide me with your best price and stock availability.",
+    "thanks": "Thank you.",
+    "quoteMessage": "I would like to request a quote:",
+    "nameField": "Name",
+    "phoneField": "Phone",
+    "companyField": "Company/Activity",
+    "productField": "Requested Product",
+    "messageField": "Message"
+  },
+  "common": {
+    "loading": "Loading data...",
+    "ieg": "IEG"
+  },
+  "lightbox": {
+    "close": "Close",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetZoom": "Reset zoom",
+    "previous": "Previous",
+    "next": "Next",
+    "hint": "Use the mouse wheel to zoom and swipe to navigate"
+  },
+  "settings": {
+    "address": "Cairo - Arab Republic of Egypt",
+    "workingHours": "Saturday - Thursday: 9:00 AM - 6:00 PM",
+    "deliverySpeed": "Fast delivery and installation of equipment to ensure your business operations and production lines never stop."
+  }
+}

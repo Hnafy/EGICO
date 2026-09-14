@@ -1,10 +1,12 @@
 import React, { useMemo, useState } from 'react';
 import { Search, MessageCircle, Sparkles, Eye } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { ProductImage } from './ProductImages';
 import { buildWhatsAppLink, quoteMessageFor } from '../lib/whatsapp';
 import { useScrollReveal } from '../lib/useScrollReveal';
 
 function ProductCard({ item, settings, onSelectProduct, delayMs }) {
+  const { t } = useTranslation();
   const { ref, isVisible } = useScrollReveal({ threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
   return (
@@ -56,7 +58,7 @@ function ProductCard({ item, settings, onSelectProduct, delayMs }) {
             className="flex items-center gap-1.5 px-3.5 py-2 text-xs font-semibold text-[#172033] bg-[#F8FAFC] hover:bg-[#F1F5F9] border border-[#E5E7EB] rounded-xl transition-all duration-[350ms] ease-[cubic-bezier(0.16,1,0.3,1)] cursor-pointer whitespace-nowrap"
           >
             <Eye className="w-3.5 h-3.5 text-[#B5122B]" />
-            <span>التفاصيل</span>
+            <span>{t("catalog.details")}</span>
           </button>
 
           <a
@@ -67,7 +69,7 @@ function ProductCard({ item, settings, onSelectProduct, delayMs }) {
             className="flex-1 flex items-center justify-center gap-1.5 px-4 py-2 text-xs sm:text-sm font-bold text-white bg-[#25D366] hover:bg-[#20bd5a] rounded-xl shadow-[0_2px_8px_rgba(37,211,102,0.25)] hover:shadow-[0_4px_16px_rgba(37,211,102,0.35)] transition-all duration-[350ms] ease-[cubic-bezier(0.16,1,0.3,1)] active:scale-95 text-center whitespace-nowrap"
           >
             <MessageCircle className="w-4 h-4" />
-            <span>اطلب عرض سعر</span>
+            <span>{t("catalog.quote")}</span>
           </a>
         </div>
       </div>
@@ -76,6 +78,7 @@ function ProductCard({ item, settings, onSelectProduct, delayMs }) {
 }
 
 export default function ProductsCatalog({ products, categories, settings = {}, onSelectProduct }) {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const section = useScrollReveal({ threshold: 0.05, rootMargin: '0px 0px -80px 0px' });
@@ -94,12 +97,12 @@ export default function ProductsCatalog({ products, categories, settings = {}, o
   }, [selectedCategory, searchQuery, products]);
 
   return (
-    <main className="flex-grow pt-28 pb-20 px-4 sm:px-8 md:px-12 max-w-7xl mx-auto w-full dir-rtl">
+    <main className="flex-grow pt-28 pb-20 px-4 sm:px-8 md:px-12 max-w-7xl mx-auto w-full">
 
       {/* Section Header */}
       <div
         ref={section.ref}
-        className="text-right mb-10 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+        className="text-start mb-10 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
         style={{
           opacity: section.isVisible ? 1 : 0,
           transform: section.isVisible ? 'translateY(0)' : 'translateY(24px)',
@@ -107,14 +110,13 @@ export default function ProductsCatalog({ products, categories, settings = {}, o
       >
         <div className="inline-flex items-center gap-2 bg-white border border-[#E5E7EB] px-3.5 py-1 rounded-full mb-3 shadow-xs">
           <Sparkles className="w-4 h-4 text-[#B5122B]" />
-          <span className="text-xs font-bold text-[#B5122B]">كتالوج منتجات IEG</span>
+          <span className="text-xs font-bold text-[#B5122B]">{t("catalog.badge")}</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#111827] mb-3">
-          أنظمة الترميز والطباعة الصناعية
+          {t("catalog.heading")}
         </h1>
         <p className="text-base text-[#667085] max-w-2xl">
-          طابعات حرارية وأحرف كبيرة، آلات وسم بالليزر CO2 و Fibre و UV، وحلول ترميز متكاملة
-          لخطوط الإنتاج، مع دعم فني وتركيب.
+          {t("catalog.description")}
         </p>
       </div>
 
@@ -123,12 +125,12 @@ export default function ProductsCatalog({ products, categories, settings = {}, o
         <div className="relative">
           <input
             type="text"
-            placeholder="ابحث عن موديل، فئة، أو استخدام..."
+            placeholder={t("catalog.searchPlaceholder")}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-4 pr-11 py-3 bg-[#F8FAFC] border border-[#E5E7EB] rounded-xl text-sm font-medium text-[#172033] placeholder-[#98A2B3] focus:outline-none focus:border-[#B5122B] focus:bg-white transition-all duration-[350ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
+            className="w-full ps-11 pe-4 py-3 bg-[#F8FAFC] border border-[#E5E7EB] rounded-xl text-sm font-medium text-[#172033] placeholder-[#98A2B3] focus:outline-none focus:border-[#B5122B] focus:bg-white transition-all duration-[350ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
           />
-          <Search className="w-5 h-5 text-[#98A2B3] absolute top-3.5 right-3.5" />
+          <Search className="w-5 h-5 text-[#98A2B3] absolute top-3.5 start-3.5" />
         </div>
 
         <div className="flex gap-2 overflow-x-auto pb-2 pt-2 border-t border-[#F1F5F9] scrollbar-none">
@@ -140,7 +142,7 @@ export default function ProductsCatalog({ products, categories, settings = {}, o
                 : 'bg-white text-[#172033] hover:bg-[#F8FAFC] border border-[#E5E7EB] hover:border-[#D1D5DB]'
             }`}
           >
-            الكل
+            {t("catalog.all")}
           </button>
           {categories.map((cat) => {
             const isSelected = selectedCategory === cat.id;
@@ -179,13 +181,13 @@ export default function ProductsCatalog({ products, categories, settings = {}, o
           <div className="w-16 h-16 rounded-full bg-[#F8FAFC] border border-[#E5E7EB] flex items-center justify-center mx-auto mb-2">
             <Search className="w-7 h-7 text-[#98A2B3]" />
           </div>
-          <p className="text-lg font-bold text-[#172033]">لا توجد نتائج مطابقة لبحثك</p>
-          <p className="text-sm text-[#667085]">جرّب البحث بكلمات أخرى أو اختر قسماً مختلفاً.</p>
+          <p className="text-lg font-bold text-[#172033]">{t("catalog.noResults")}</p>
+          <p className="text-sm text-[#667085]">{t("catalog.noResultsHint")}</p>
           <button
             onClick={() => { setSelectedCategory('all'); setSearchQuery(''); }}
             className="bg-[#B5122B] text-white text-sm font-bold px-6 py-2.5 rounded-full hover:bg-[#8F0F20] transition-all duration-[350ms] ease-[cubic-bezier(0.16,1,0.3,1)] shadow-[0_2px_8px_rgba(181,18,43,0.25)] hover:shadow-[0_4px_16px_rgba(181,18,43,0.35)] cursor-pointer"
           >
-            إعادة تعيين البحث
+            {t("catalog.resetSearch")}
           </button>
         </div>
       )}

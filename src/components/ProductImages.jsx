@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { X, Plus, Minus, RotateCcw, ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export function ProductImage({ images, index, alt, className }) {
   const [failed, setFailed] = useState(false);
@@ -18,6 +19,7 @@ export function ProductImage({ images, index, alt, className }) {
 }
 
 export function Lightbox({ images, index, title, onClose, onNavigate }) {
+  const { t } = useTranslation();
   const [zoom, setZoom] = useState(1);
 
   useEffect(() => {
@@ -45,22 +47,22 @@ export function Lightbox({ images, index, title, onClose, onNavigate }) {
     >
       <button
         onClick={onClose}
-        className="absolute top-4 left-4 p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
-        aria-label="إغلاق"
+        className="absolute top-4 start-4 p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
+        aria-label={t("lightbox.close")}
       >
         <X className="w-5 h-5" />
       </button>
 
       <div className="flex flex-col items-center gap-4 select-none" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-3 py-1.5 text-white">
-          <button onClick={() => setZoom((z) => Math.min(3, z + 0.25))} className="p-1 hover:bg-white/20 rounded-full transition-colors cursor-pointer" aria-label="تكبير">
+          <button onClick={() => setZoom((z) => Math.min(3, z + 0.25))} className="p-1 hover:bg-white/20 rounded-full transition-colors cursor-pointer" aria-label={t("lightbox.zoomIn")}>
             <Plus className="w-4 h-4" />
           </button>
           <span className="text-sm font-bold w-12 text-center">{Math.round(zoom * 100)}%</span>
-          <button onClick={() => setZoom((z) => Math.max(1, z - 0.25))} className="p-1 hover:bg-white/20 rounded-full transition-colors cursor-pointer" aria-label="تصغير">
+          <button onClick={() => setZoom((z) => Math.max(1, z - 0.25))} className="p-1 hover:bg-white/20 rounded-full transition-colors cursor-pointer" aria-label={t("lightbox.zoomOut")}>
             <Minus className="w-4 h-4" />
           </button>
-          <button onClick={() => setZoom(1)} className="p-1 hover:bg-white/20 rounded-full transition-colors cursor-pointer" aria-label="إعادة تعيين التكبير">
+          <button onClick={() => setZoom(1)} className="p-1 hover:bg-white/20 rounded-full transition-colors cursor-pointer" aria-label={t("lightbox.resetZoom")}>
             <RotateCcw className="w-4 h-4" />
           </button>
         </div>
@@ -69,7 +71,7 @@ export function Lightbox({ images, index, title, onClose, onNavigate }) {
           <button
             onClick={() => onNavigate((index - 1 + images.length) % images.length)}
             className="hidden sm:flex p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
-            aria-label="السابق"
+            aria-label={t("lightbox.previous")}
           >
             <ChevronRight className="w-5 h-5" />
           </button>
@@ -85,14 +87,14 @@ export function Lightbox({ images, index, title, onClose, onNavigate }) {
           <button
             onClick={() => onNavigate((index + 1) % images.length)}
             className="hidden sm:flex p-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
-            aria-label="التالي"
+            aria-label={t("lightbox.next")}
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
         </div>
 
         <p className="text-white/80 text-xs font-medium">
-          {index + 1} / {images.length} — استخدم عجلة الفأرة للتكبير والإطاحة للتنقل
+          {index + 1} / {images.length} — {t("lightbox.hint")}
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import {
-  ChevronLeft,
+  ChevronRight,
   FileText,
   MessageCircle,
   CheckCircle2,
@@ -13,6 +13,7 @@ import {
   BadgePercent,
   Rotate3D,
 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { ProductImage, Lightbox } from './ProductImages';
 import { buildWhatsAppLink, quoteMessageFor } from '../lib/whatsapp';
 
@@ -25,6 +26,7 @@ export default function ProductDetailPage({
   onBackToProducts,
   onSelectProduct,
 }) {
+  const { t } = useTranslation();
   const galleryImages = useMemo(() => {
     if (!product || !product.images) return [];
     const main = [product.images.main].filter(Boolean);
@@ -49,16 +51,16 @@ export default function ProductDetailPage({
   };
 
   return (
-    <main className="flex-grow pt-28 pb-20 px-4 sm:px-8 md:px-12 max-w-7xl mx-auto w-full dir-rtl">
+    <main className="flex-grow pt-28 pb-20 px-4 sm:px-8 md:px-12 max-w-7xl mx-auto w-full">
 
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="text-[#667085] mb-8 flex flex-wrap gap-2 items-center text-sm font-semibold">
         <button onClick={onBackToProducts} className="hover:text-[#B5122B] transition-colors cursor-pointer">
-          المنتجات
+          {t("product.breadcrumbProducts")}
         </button>
-        <ChevronLeft className="w-4 h-4 text-[#98A2B3]" />
+        <ChevronRight className="w-4 h-4 text-[#98A2B3] rtl:rotate-180" />
         <span className="hover:text-[#B5122B]">{product.category}</span>
-        <ChevronLeft className="w-4 h-4 text-[#98A2B3]" />
+        <ChevronRight className="w-4 h-4 text-[#98A2B3] rtl:rotate-180" />
         <span className="text-[#111827] font-bold">{product.name}</span>
       </nav>
 
@@ -77,9 +79,9 @@ export default function ProductDetailPage({
               alt={product.name}
               className="object-contain w-full h-full max-h-[440px] transition-transform duration-300 group-hover:scale-105"
             />
-            <span className="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1.5 rounded-full text-[11px] font-bold text-[#172033] flex items-center gap-1.5 shadow-xs">
+            <span className="absolute bottom-4 start-4 bg-white/90 backdrop-blur px-3 py-1.5 rounded-full text-[11px] font-bold text-[#172033] flex items-center gap-1.5 shadow-xs">
               <Zap className="w-3.5 h-3.5 text-[#B5122B]" />
-              اضغط للتكبير
+              {t("product.clickToZoom")}
             </span>
           </div>
 
@@ -108,7 +110,7 @@ export default function ProductDetailPage({
         </div>
 
         {/* Summary column */}
-        <div className="flex flex-col text-right">
+        <div className="flex flex-col text-start">
 
           <span className="inline-block bg-[#F8FAFC] text-[#172033] font-bold text-xs md:text-sm px-3.5 py-1.5 rounded-full mb-3 w-fit border border-[#E5E7EB]">
             {(product.brand || 'IEGCO')}
@@ -158,7 +160,7 @@ export default function ProductDetailPage({
                 className="flex-1 bg-[#25D366] text-white font-bold text-base sm:text-lg py-3.5 rounded-xl hover:bg-[#20bd5a] transition-all shadow-md hover:shadow-lg active:scale-98 flex items-center justify-center gap-2 cursor-pointer text-center"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>اطلب عرض سعر</span>
+                <span>{t("catalog.quote")}</span>
               </a>
 
               {product.pdfUrl && (
@@ -169,13 +171,13 @@ export default function ProductDetailPage({
                   className="flex-1 bg-[#F8FAFC] border border-[#E5E7EB] text-[#B5122B] text-base sm:text-lg py-3.5 rounded-xl hover:bg-[#FEF2F2] transition-all font-bold flex items-center justify-center gap-2 shadow-xs"
                 >
                   <FileText className="w-5 h-5" />
-                  <span>تحميل الكاتالوج PDF</span>
+                  <span>{t("product.downloadPdf")}</span>
                 </a>
               )}
             </div>
 
             <div className="pt-3 border-t border-[#F8FAFC] text-xs text-[#667085] text-center">
-              سيصلك عرض سعر رسمي وموعد توريد عبر واتساب خلال دقائق
+              {t("product.quoteNote")}
             </div>
           </div>
         </div>
@@ -192,7 +194,7 @@ export default function ProductDetailPage({
                 : 'text-[#667085] hover:text-[#111827]'
             }`}
           >
-            المميزات والاستخدامات
+            {t("product.featuresTab")}
           </button>
           <button
             onClick={() => setActiveTab('specs')}
@@ -202,7 +204,7 @@ export default function ProductDetailPage({
                 : 'text-[#667085] hover:text-[#111827]'
             }`}
           >
-            المواصفات الفنية
+            {t("product.specsTab")}
           </button>
         </div>
 
@@ -211,7 +213,7 @@ export default function ProductDetailPage({
           <div className="space-y-8">
             <div className="bg-white rounded-2xl border border-[#E5E7EB] p-8 text-[#667085] leading-relaxed shadow-xs">
               <h3 className="text-xl font-bold text-[#111827] mb-3">
-                نظرة عامة على {product.name}
+                {t("product.overviewPrefix")} {product.name}
               </h3>
               <p className="text-base">{product.summary}</p>
 
@@ -257,7 +259,7 @@ export default function ProductDetailPage({
             {galleryImages.length > 1 && (
               <div>
                 <h4 className="text-lg font-bold text-[#111827] mb-4">
-                  صور حقيقية من زوايا مختلفة
+                  {t("product.galleryTitle")}
                 </h4>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {galleryImages.map((img, idx) => (
@@ -280,7 +282,7 @@ export default function ProductDetailPage({
           <div className="space-y-8">
             {specGroups.length === 0 && (
               <div className="bg-white rounded-2xl border border-[#E5E7EB] p-8 text-[#667085] text-center">
-                لا تتوفر مواصفات مسجلة لهذا المنتج.
+                {t("product.noSpecs")}
               </div>
             )}
             {specGroups.map((group, gi) => (
@@ -315,13 +317,13 @@ export default function ProductDetailPage({
       {relatedProducts.length > 0 && (
         <section>
           <div className="flex items-center justify-between mb-8">
-            <h3 className="text-2xl font-bold text-[#111827]">منتجات أخرى ذات صلة</h3>
+            <h3 className="text-2xl font-bold text-[#111827]">{t("product.relatedProducts")}</h3>
             <button
               onClick={onBackToProducts}
               className="text-sm font-bold text-[#B5122B] hover:underline flex items-center gap-1"
             >
-              <span>عرض كافة المنتجات</span>
-              <ChevronLeft className="w-4 h-4" />
+              <span>{t("product.viewAll")}</span>
+              <ChevronRight className="w-4 h-4 rtl:rotate-180" />
             </button>
           </div>
 
@@ -354,7 +356,7 @@ export default function ProductDetailPage({
 
                 <div className="pt-4 border-t border-[#F8FAFC] flex items-center justify-between gap-2">
                   <span className="text-xs font-bold text-[#172033] bg-white border border-[#E5E7EB] hover:bg-[#B5122B] hover:text-white px-3 py-1.5 rounded-lg transition-colors cursor-pointer">
-                    التفاصيل
+                    {t("product.details")}
                   </span>
                 </div>
               </div>

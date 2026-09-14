@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
-  ArrowLeft,
+  ArrowRight,
   CheckCircle2,
   MessageCircle,
   Zap,
   Award,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { buildWhatsAppLink, quoteMessageFor } from "../lib/whatsapp";
 import { useScrollReveal } from "../lib/useScrollReveal";
 
@@ -14,6 +15,8 @@ export default function HeroSection({
   settings = {},
   onBrowseProducts,
 }) {
+  const { t } = useTranslation();
+  const headingWords = t("hero.heading").split(" ");
   const [parallax, setParallax] = useState({ bg: 0, content: 0 });
   const scrollRaf = useRef(null);
 
@@ -77,7 +80,7 @@ export default function HeroSection({
           willChange: "transform",
         }}
       >
-        <div className="w-full md:w-3/5 text-right space-y-6">
+        <div className="w-full md:w-3/5 text-start space-y-6">
           {/* 1. Badge */}
           <div
             className="inline-flex items-center gap-2 bg-white border border-[#E5E7EB] px-3.5 py-1.5 rounded-full shadow-xs hero-reveal hero-reveal-badge"
@@ -85,43 +88,32 @@ export default function HeroSection({
           >
             <span className="w-2 h-2 rounded-full bg-[#B5122B] animate-pulse"></span>
             <span className="text-xs md:text-sm font-semibold text-[#B5122B]">
-              المجموعة الهندسيه المتكاملة
+              {t("hero.badge")}
             </span>
           </div>
 
           {/* 2. Main Heading — masked word-by-word rise */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-black text-[#111827] leading-[1.25] tracking-tight">
-            <span className="word-mask">
-              <span className="word-inner" style={{ animationDelay: "100ms" }}>
-                حلول
+            {headingWords.map((word, idx) => (
+              <span key={idx} className="word-mask">
+                <span
+                  className="word-inner"
+                  style={{ animationDelay: `${100 + idx * 70}ms` }}
+                >
+                  {word.toLowerCase().includes("barcode") || word === "الباركود" ? (
+                    <span className="text-[#B5122B]">{word}</span>
+                  ) : (
+                    word
+                  )}
+                </span>
+                {idx < headingWords.length - 1 ? " " : null}
               </span>
-            </span>{" "}
-            <span className="word-mask">
-              <span className="word-inner" style={{ animationDelay: "170ms" }}>
-                متكاملة
-              </span>
-            </span>{" "}
-            <span className="word-mask">
-              <span className="word-inner" style={{ animationDelay: "240ms" }}>
-                لطباعة
-              </span>
-            </span>{" "}
-            <span className="word-mask">
-              <span className="word-inner" style={{ animationDelay: "310ms" }}>
-                <span className="text-[#B5122B]">الباركود</span>
-              </span>
-            </span>{" "}
-            <span className="word-mask">
-              <span className="word-inner" style={{ animationDelay: "380ms" }}>
-                والملصقات
-              </span>
-            </span>
+            ))}
           </h1>
 
           {/* 3. Description — blur rise reveal */}
           <p className="text-base sm:text-lg md:text-xl text-[#667085] leading-relaxed max-w-2xl hero-desc-in">
-            أنظمة ترميز وطباعة صناعية عالية الجودة للمصانع وخطوط الإنتاج، من
-            الطابعات الحرارية إلى آلات الوسم بالليزر، مع دعم فني وتركيب.
+            {t("hero.description")}
           </p>
 
           {/* 4. Feature cards — scroll reveal with stagger */}
@@ -140,7 +132,7 @@ export default function HeroSection({
             >
               <CheckCircle2 className="w-4 h-4 text-[#B5122B] flex-shrink-0" />
               <span className="text-xs font-bold text-[#111827]">
-                ضمان معتمد 100%
+                {t("hero.warranty")}
               </span>
             </div>
             <div
@@ -157,7 +149,7 @@ export default function HeroSection({
             >
               <Zap className="w-4 h-4 text-[#B5122B] flex-shrink-0" />
               <span className="text-xs font-bold text-[#111827]">
-                توريد فوري للمصانع
+                {t("hero.delivery")}
               </span>
             </div>
             <div
@@ -174,7 +166,7 @@ export default function HeroSection({
             >
               <Award className="w-4 h-4 text-[#B5122B] flex-shrink-0" />
               <span className="text-xs font-bold text-[#111827]">
-                دعم فني وتركيب مجاني
+                {t("hero.support")}
               </span>
             </div>
           </div>
@@ -192,8 +184,8 @@ export default function HeroSection({
               style={{ animationDelay: "650ms" }}
             >
               <MessageCircle className="w-5 h-5" />
-              <span>اطلب عرض سعر</span>
-              <ArrowLeft className="w-4 h-4" />
+              <span>{t("hero.ctaQuote")}</span>
+              <ArrowRight className="w-4 h-4 rtl:rotate-180" />
             </a>
 
             <button
@@ -201,7 +193,7 @@ export default function HeroSection({
               className="bg-white border border-[#E5E7EB] text-[#172033] px-8 py-3.5 rounded-full font-bold text-base cursor-pointer shadow-xs transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#F8FAFC] hover:border-[#B5122B]/40 active:scale-[0.98] hero-reveal hero-reveal-btn"
               style={{ animationDelay: "650ms" }}
             >
-              تصفح المنتجات
+              {t("hero.browseProducts")}
             </button>
           </div>
         </div>
@@ -233,7 +225,7 @@ export default function HeroSection({
                     </h3>
                   </div>
                   <span className="bg-[#B5122B] text-white text-xs font-bold px-2.5 py-1 rounded-full whitespace-nowrap">
-                    الأكثر طلباً
+                    {t("hero.mostPopular")}
                   </span>
                 </div>
 
@@ -243,7 +235,7 @@ export default function HeroSection({
                   className="w-full h-44 object-contain rounded-lg bg-[#F8FAFC] p-2"
                 />
 
-                <p className="mt-4 text-xs text-[#667085] leading-relaxed line-clamp-2 text-right">
+                <p className="mt-4 text-xs text-[#667085] leading-relaxed line-clamp-2 text-start">
                   {featuredProduct.summary}
                 </p>
               </div>

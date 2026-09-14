@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
@@ -14,6 +15,7 @@ import { useData } from './context/DataContext';
 
 export default function App() {
   const { products, categories, settings, loading } = useData();
+  const { t } = useTranslation();
   const { id: routeId } = useParams();
   const navigate = useNavigate();
 
@@ -65,7 +67,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FFFFFF] text-[#172033] flex flex-col font-tajawal antialiased selection:bg-[#B5122B] selection:text-white">
+    <div className="min-h-screen bg-[#FFFFFF] text-[#172033] flex flex-col antialiased selection:bg-[#B5122B] selection:text-white">
       {showPreloader && !preloaderGone && (
         <Preloader
           startFade={preloaderFading}
@@ -82,7 +84,7 @@ export default function App() {
       <div className="flex-grow">
         {loading && (
           <main className="pt-20 min-h-[60vh] flex items-center justify-center">
-            <p className="text-lg text-[#667085] font-bold">جاري تحميل البيانات...</p>
+            <p className="text-lg text-[#667085] font-bold">{t("common.loading")}</p>
           </main>
         )}
 

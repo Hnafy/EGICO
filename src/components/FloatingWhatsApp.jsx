@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MessageCircle, X, Send } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { buildWhatsAppLink, normalizePhone } from "../lib/whatsapp";
 
 export default function FloatingWhatsApp({ settings = {} }) {
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const [message, setMessage] = useState(
-    "مرحباً، أود الاستفسار عن أنظمة الترميز والطباعة الصناعية.",
-  );
+  const [message, setMessage] = useState(t("whatsapp.defaultQuote"));
+
+  useEffect(() => {
+    setMessage(t("whatsapp.defaultQuote"));
+  }, [i18n.language]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleSend = () => {
     window.open(buildWhatsAppLink(settings.whatsapp, message), "_blank");
@@ -14,7 +18,7 @@ export default function FloatingWhatsApp({ settings = {} }) {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 dir-rtl">
+    <div className="fixed bottom-6 right-6 z-40">
       {/* Quick Chat Popup Box */}
       {isOpen && (
         <div className="mb-4 w-72 sm:w-80 bg-white rounded-2xl border border-[#E5E7EB] shadow-2xl overflow-hidden animate-in slide-in-from-bottom-4 duration-200">
@@ -26,10 +30,10 @@ export default function FloatingWhatsApp({ settings = {} }) {
               </div>
               <div>
                 <h4 className="font-bold text-sm leading-tight">
-                  خدمة عملاء IEG
+                  {t("whatsapp.customerService")}
                 </h4>
                 <span className="text-[10px] text-white/90">
-                  متواجدون للرد الفوري
+                  {t("whatsapp.availableNow")}
                 </span>
               </div>
             </div>
@@ -44,8 +48,7 @@ export default function FloatingWhatsApp({ settings = {} }) {
           {/* Body */}
           <div className="p-4 bg-white space-y-3">
             <div className="bg-[#F8FAFC] p-3 rounded-xl rounded-tr-xs shadow-2xs text-xs text-[#172033] border border-[#E5E7EB]">
-              مرحباً بك في المجموعة الهندسية المتكاملة! كيف يمكننا مساعدتك اليوم
-              بخصوص طابعات وأنظمة الترميز الصناعية؟
+              {t("whatsapp.welcome")}
             </div>
 
             <div className="relative">
@@ -54,13 +57,13 @@ export default function FloatingWhatsApp({ settings = {} }) {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="w-full p-2.5 bg-[#F8FAFC] border border-[#E5E7EB] rounded-xl text-xs text-[#172033] focus:outline-none focus:border-[#25D366] resize-none"
-                placeholder="اكتب رسالتك..."
+                placeholder={t("whatsapp.typeMessage")}
               ></textarea>
               <button
                 onClick={handleSend}
                 className="w-full mt-2 bg-[#25D366] text-white py-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 hover:bg-[#20bd5a] transition-colors"
               >
-                <span>ابدأ المحادثة على واتساب</span>
+                <span>{t("whatsapp.startChat")}</span>
                 <Send className="w-3.5 h-3.5" />
               </button>
             </div>
@@ -75,8 +78,8 @@ export default function FloatingWhatsApp({ settings = {} }) {
         rel="noopener noreferrer"
         onClick={() => setIsOpen(!isOpen)}
         className="inline-flex bg-[#25D366] hover:bg-[#20bd5a] text-white w-14 h-14 rounded-full items-center justify-center shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:scale-110 active:scale-95 transition-all duration-300 relative cursor-pointer"
-        title="تواصل عبر واتساب"
-        aria-label="تواصل عبر واتساب"
+        title={t("whatsapp.contactWhatsApp")}
+        aria-label={t("whatsapp.contactWhatsApp")}
       >
         <MessageCircle className="w-7 h-7 fill-white" />
         <span className="absolute -top-1 -right-1 w-3.5 h-3.5 bg-red-500 border-2 border-white rounded-full"></span>
