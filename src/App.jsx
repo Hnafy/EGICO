@@ -9,6 +9,7 @@ import ProductsCatalog from './components/ProductsCatalog';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import Preloader from './components/Preloader';
 import { useData } from './context/DataContext';
 
 export default function App() {
@@ -25,6 +26,25 @@ export default function App() {
     products.find((p) => p.id === settings.featuredProductId) || products[0] || null;
 
   const [currentTab, setCurrentTab] = useState('home');
+  const [showPreloader, setShowPreloader] = useState(!routeId);
+  const [preloaderFading, setPreloaderFading] = useState(false);
+  const [preloaderGone, setPreloaderGone] = useState(false);
+
+  // Show the branded preloader on every page open (home route only)
+  useEffect(() => {
+    if (!routeId) setShowPreloader(true);
+  }, [routeId]);
+
+  // Start fading the preloader as soon as data is ready
+  useEffect(() => {
+    if (!showPreloader || preloaderFading || loading) return;
+    const timer = setTimeout(() => setPreloaderFading(true), 350);
+    return () => clearTimeout(timer);
+  }, [showPreloader, preloaderFading, loading]);
+
+  // Reveal home content only once the preloader has fully cleared, so the
+  // hero entrance animations are never hidden behind the fading overlay
+  const homeRevealed = preloaderGone || !showPreloader;
 
   useEffect(() => {
     if (!routeId) {
@@ -45,7 +65,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fff8f8] text-[#1e1b1c] flex flex-col font-tajawal antialiased selection:bg-[#a6192e] selection:text-white">
+    <div className="min-h-screen bg-[#FFFFFF] text-[#172033] flex flex-col font-tajawal antialiased selection:bg-[#B5122B] selection:text-white">
+      {showPreloader && !preloaderGone && (
+        <Preloader
+          startFade={preloaderFading}
+          onDone={() => setPreloaderGone(true)}
+        />
+      )}
+
       <Navbar
         currentTab={isProductRoute ? 'product-detail' : currentTab}
         setCurrentTab={navigateToTab}
@@ -55,11 +82,11 @@ export default function App() {
       <div className="flex-grow">
         {loading && (
           <main className="pt-20 min-h-[60vh] flex items-center justify-center">
-            <p className="text-lg text-[#594040] font-bold">جاري تحميل البيانات...</p>
+            <p className="text-lg text-[#667085] font-bold">جاري تحميل البيانات...</p>
           </main>
         )}
 
-        {!loading && currentTab === 'home' && (
+        {!loading && homeRevealed && currentTab === 'home' && (
           <main className="pt-20">
             <HeroSection
               featuredProduct={featuredProduct}

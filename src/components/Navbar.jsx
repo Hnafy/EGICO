@@ -30,7 +30,7 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
   return (
     <header
       id="main-header"
-      className={`fixed top-0 w-full z-50 bg-[#fff8f8]/95 backdrop-blur-md border-b border-[#e1bebe]/60 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-[#E5E7EB] transition-all duration-300 ${
         scrolled ? "shadow-md bg-white" : "shadow-xs"
       }`}
     >
@@ -51,8 +51,8 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
                 onClick={() => handleNavClick(item.id)}
                 className={`transition-all font-semibold cursor-pointer text-sm lg:text-base px-2 py-1.5 relative ${
                   isActive
-                    ? 'text-[#81001c] font-bold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#81001c]'
-                    : "text-[#594040] hover:text-[#81001c]"
+                    ? 'text-[#B5122B] font-bold after:content-[""] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-[#B5122B]'
+                    : "text-[#667085] hover:text-[#B5122B]"
                 }`}
               >
                 {item.label}
@@ -75,7 +75,7 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-[#1e1b1c] p-2 rounded-lg hover:bg-[#f5eced]"
+            className="md:hidden text-[#172033] p-2 rounded-lg hover:bg-[#F8FAFC]"
             aria-label="القائمة"
           >
             {mobileMenuOpen ? (
@@ -88,7 +88,7 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-[#e1bebe] px-6 py-4 shadow-lg animate-in slide-in-from-top-2 duration-200">
+        <div className="md:hidden bg-white border-b border-[#E5E7EB] px-6 py-4 shadow-lg animate-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col gap-3 text-right">
             {navItems.map((item) => (
               <button
@@ -96,18 +96,18 @@ export default function Navbar({ currentTab, setCurrentTab, settings = {} }) {
                 onClick={() => handleNavClick(item.id)}
                 className={`py-2.5 px-3 rounded-lg text-right font-medium text-base transition-colors ${
                   currentTab === item.id
-                    ? "bg-[#fbf1f2] text-[#81001c] font-bold"
-                    : "text-[#594040] hover:bg-[#f5eced]"
+                    ? "bg-[#FEF2F2] text-[#B5122B] font-bold"
+                    : "text-[#667085] hover:bg-[#F8FAFC]"
                 }`}
               >
                 {item.label}
               </button>
             ))}
-            <div className="pt-3 border-t border-[#e9e0e1] flex items-center justify-between">
-              <span className="text-xs text-[#5d5e60]">للاستفسار السريع:</span>
+            <div className="pt-3 border-t border-[#E5E7EB] flex items-center justify-between">
+              <span className="text-xs text-[#667085]">للاستفسار السريع:</span>
               <a
                 href="tel:01220997663"
-                className="flex items-center gap-1.5 text-xs text-[#81001c] font-bold"
+                className="flex items-center gap-1.5 text-xs text-[#B5122B] font-bold"
               >
                 <Phone className="w-3.5 h-3.5" />
                 01220997663

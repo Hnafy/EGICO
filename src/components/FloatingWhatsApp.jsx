@@ -17,7 +17,7 @@ export default function FloatingWhatsApp({ settings = {} }) {
     <div className="fixed bottom-6 right-6 z-40 dir-rtl">
       {/* Quick Chat Popup Box */}
       {isOpen && (
-        <div className="mb-4 w-72 sm:w-80 bg-white rounded-2xl border border-[#e1bebe] shadow-2xl overflow-hidden animate-in slide-in-from-bottom-4 duration-200">
+        <div className="mb-4 w-72 sm:w-80 bg-white rounded-2xl border border-[#E5E7EB] shadow-2xl overflow-hidden animate-in slide-in-from-bottom-4 duration-200">
           {/* Header */}
           <div className="bg-[#25D366] text-white p-4 flex items-center justify-between">
             <div className="flex items-center gap-2.5">
@@ -42,8 +42,8 @@ export default function FloatingWhatsApp({ settings = {} }) {
           </div>
 
           {/* Body */}
-          <div className="p-4 bg-[#fbf1f2]/50 space-y-3">
-            <div className="bg-white p-3 rounded-xl rounded-tr-xs shadow-2xs text-xs text-[#1e1b1c] border border-[#e1bebe]/60">
+          <div className="p-4 bg-white space-y-3">
+            <div className="bg-[#F8FAFC] p-3 rounded-xl rounded-tr-xs shadow-2xs text-xs text-[#172033] border border-[#E5E7EB]">
               مرحباً بك في المجموعة الهندسية المتكاملة! كيف يمكننا مساعدتك اليوم
               بخصوص طابعات وأنظمة الترميز الصناعية؟
             </div>
@@ -53,7 +53,7 @@ export default function FloatingWhatsApp({ settings = {} }) {
                 rows={2}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full p-2.5 bg-white border border-[#e1bebe] rounded-xl text-xs text-[#1e1b1c] focus:outline-none focus:border-[#25D366] resize-none"
+                className="w-full p-2.5 bg-[#F8FAFC] border border-[#E5E7EB] rounded-xl text-xs text-[#172033] focus:outline-none focus:border-[#25D366] resize-none"
                 placeholder="اكتب رسالتك..."
               ></textarea>
               <button

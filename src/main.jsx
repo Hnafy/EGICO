@@ -7,7 +7,7 @@ import { DataProvider } from './context/DataContext';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <DataProvider>
         <Routes>
           <Route path="/" element={<App />} />
