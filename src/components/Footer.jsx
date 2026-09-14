@@ -6,6 +6,7 @@ import {
   ShieldCheck,
   Clock,
   MessageCircle,
+  Facebook,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
@@ -155,6 +156,17 @@ export default function Footer({ settings = {}, onNavigate }) {
                   className="hover:text-[#25D366] text-[#B5122B] font-bold"
                 >
                   {t("footer.directWhatsApp")}
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Facebook className="w-4 h-4 text-[#B5122B] flex-shrink-0" />
+                <a
+                  href="https://www.facebook.com/share/1evZK6y9pM/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#B5122B]"
+                >
+                  {t("footer.facebookPage")}
                 </a>
               </li>
             </ul>
