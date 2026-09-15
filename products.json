@@ -11,8 +11,10 @@
     "images": {
       "main": "/images/products/tij1800-hand-thermal-inkjet-printer/main.jpeg",
       "gallery": [
-        "/images/products/tij1800-hand-thermal-inkjet-printer/view-1.jpeg",
-        "/images/products/tij1800-hand-thermal-inkjet-printer/view-2.jpeg"
+        "/images/products/tij1800-hand-thermal-inkjet-printer/veiw-3.png",
+        "/images/products/tij1800-hand-thermal-inkjet-printer/view-1.png",
+        "/images/products/tij1800-hand-thermal-inkjet-printer/view-2.png",
+        "/images/products/tij1800-hand-thermal-inkjet-printer/view-4.png"
       ]
     },
     "advantages": [
@@ -116,8 +118,10 @@
     "images": {
       "main": "/images/products/tij1800-mini-plus/main.png",
       "gallery": [
+        "/images/products/tij1800-mini-plus/veiw-4.png",
         "/images/products/tij1800-mini-plus/view-1.png",
-        "/images/products/tij1800-mini-plus/view-2.png"
+        "/images/products/tij1800-mini-plus/view-2.png",
+        "/images/products/tij1800-mini-plus/view-3.png"
       ]
     },
     "advantages": [
@@ -234,7 +238,8 @@
       "main": "/images/products/dp2000/main.png",
       "gallery": [
         "/images/products/dp2000/front-view.png",
-        "/images/products/dp2000/heads-view.png"
+        "/images/products/dp2000/heads-view.png",
+        "/images/products/dp2000/view-1.png"
       ]
     },
     "advantages": [
@@ -381,7 +386,11 @@
     "pdfUrl": "/pdfs/products/brochure(A200)%20Coding%20%26%20Marking%20Machine-.pdf",
     "images": {
       "main": "/images/products/tij1800-a200/main.png",
-      "gallery": ["/images/products/tij1800-a200/line-setup.png"]
+      "gallery": [
+        "/images/products/tij1800-a200/line-setup.png",
+        "/images/products/tij1800-a200/veiw-1.png",
+        "/images/products/tij1800-a200/veiw-2.png"
+      ]
     },
     "advantages": [
       {
@@ -525,7 +534,8 @@
       "main": "/images/products/co2-laser-marking-machine/main.png",
       "gallery": [
         "/images/products/co2-laser-marking-machine/view-1.png",
-        "/images/products/co2-laser-marking-machine/view-2.png"
+        "/images/products/co2-laser-marking-machine/view-2.png",
+        "/images/products/co2-laser-marking-machine/view-3.png"
       ]
     },
     "advantages": [
@@ -682,7 +692,10 @@
     "pdfUrl": "/pdfs/products/FIBRE%20LASER%20MARKING%20MACHINE%202026.pdf",
     "images": {
       "main": "/images/products/fibre-laser-marking-machine/main.png",
-      "gallery": ["/images/products/fibre-laser-marking-machine/view-1.png"]
+      "gallery": [
+        "/images/products/fibre-laser-marking-machine/view-1.png",
+        "/images/products/fibre-laser-marking-machine/view-2.png"
+      ]
     },
     "advantages": [
       {
@@ -859,7 +872,8 @@
       "main": "/images/products/handheld-fibre-laser-marking-machine/main.png",
       "gallery": [
         "/images/products/handheld-fibre-laser-marking-machine/view-1.png",
-        "/images/products/handheld-fibre-laser-marking-machine/view-2.png"
+        "/images/products/handheld-fibre-laser-marking-machine/view-2.png",
+        "/images/products/handheld-fibre-laser-marking-machine/view-3.png"
       ]
     },
     "advantages": [
@@ -883,11 +897,19 @@
     "keyFeatures": [
       {
         "category": "Application Scenarios",
-        "points": ["Studios", "Street stall economy", "Outdoor activity"]
+        "points": [
+          "Studios",
+          "Street stall economy",
+          "Outdoor activity"
+        ]
       },
       {
         "category": "Standard Accessories",
-        "points": ["Lifting bracket", "Power cable", "Data cable"]
+        "points": [
+          "Lifting bracket",
+          "Power cable",
+          "Data cable"
+        ]
       }
     ],
     "specifications": [
@@ -1131,7 +1153,11 @@
     "pdfUrl": "/pdfs/products/IEGCO_LT900_CIJ_Data_Sheet_2026.pdf",
     "images": {
       "main": "/images/products/lt900-continuous-inkjet-printer/main.png",
-      "gallery": ["/images/products/lt900-continuous-inkjet-printer/view-1.png"]
+      "gallery": [
+        "/images/products/lt900-continuous-inkjet-printer/view-1.png",
+        "/images/products/lt900-continuous-inkjet-printer/view-2.png",
+        "/images/products/lt900-continuous-inkjet-printer/view-3.png"
+      ]
     },
     "advantages": [
       {
@@ -1237,7 +1263,9 @@
       "gallery": [
         "/images/products/mini-laser-marking-machine/view-1.png",
         "/images/products/mini-laser-marking-machine/view-2.png",
-        "/images/products/mini-laser-marking-machine/view-3.png"
+        "/images/products/mini-laser-marking-machine/view-3.png",
+        "/images/products/mini-laser-marking-machine/view-4.png",
+        "/images/products/mini-laser-marking-machine/view-5.png"
       ]
     },
     "advantages": [
@@ -1416,7 +1444,9 @@
       "main": "/images/products/uv900-series-uv-laser-marking-machine/main.png",
       "gallery": [
         "/images/products/uv900-series-uv-laser-marking-machine/view-1.png",
-        "/images/products/uv900-series-uv-laser-marking-machine/view-2.png"
+        "/images/products/uv900-series-uv-laser-marking-machine/view-2.png",
+        "/images/products/uv900-series-uv-laser-marking-machine/view-3.png",
+        "/images/products/uv900-series-uv-laser-marking-machine/view-4.png"
       ]
     },
     "advantages": [
@@ -1444,7 +1474,10 @@
     "keyFeatures": [
       {
         "category": "Application Scenarios",
-        "points": ["Pillow machines", "Vertical machines"]
+        "points": [
+          "Pillow machines",
+          "Vertical machines"
+        ]
       },
       {
         "category": "Standard Accessories",

@@ -1,5 +1,149 @@
 [
   {
+    "id": "dp-plus-1200-dod-printer",
+    "slug": "dp-plus-1200-dod-printer",
+    "name": "DP.PLUS 1200",
+    "title": "DP.PLUS 1200 Large Character DOD Printer",
+    "category": "Large Character Inkjet Printer",
+    "brand": "IEGCO",
+    "summary": "Modular large character Drop-on-Demand (DOD) coding printer capable of high-speed printing up to 200 m/min with printing heights up to 50 mm per print head.",
+    "pdfUrl": "/pdfs/products/dp-plus-1200-dod-printer.pdf",
+    "images": {
+      "main": "/images/products/dp-plus-1200-dod-printer/main.png",
+      "gallery": [
+        "/images/products/dp-plus-1200-dod-printer/veiw-1.png"
+      ]
+    },
+    "advantages": [
+      {
+        "title": "Sparing Use of Consumables",
+        "description": "Designed for economical fluid usage across all industrial coding operations."
+      },
+      {
+        "title": "Wide Variety of Inks",
+        "description": "Inks available in a wide variety of colors, suitable for both pigmented and non-pigmented formulations."
+      },
+      {
+        "title": "High Line Speeds",
+        "description": "Supports production line speeds from 0.2 m/min up to 200 m/min."
+      },
+      {
+        "title": "Plug & Print Technology",
+        "description": "High system availability and process reliability via quick-change system for module components."
+      },
+      {
+        "title": "Purge & Clean Technology",
+        "description": "Rapid cleaning of the print head at the press of a single button."
+      },
+      {
+        "title": "Dot Size Control (DSC Technology)",
+        "description": "Freely adjustable drop size for highly economical use of consumables."
+      },
+      {
+        "title": "Robust Print Head Technology",
+        "description": "Heavy-duty print head structure built for harsh industrial environments."
+      }
+    ],
+    "keyFeatures": [
+      {
+        "category": "Modular Flexibility",
+        "points": [
+          "Modular construction for texts, dates, or logos up to 50 mm height per print head.",
+          "Multiple print heads can be combined for larger printing requirements.",
+          "Available in 7-nozzle (DP1200-7-1) and 16-nozzle (DP1200-7-2) configurations."
+        ]
+      },
+      {
+        "category": "System Controls & Handling",
+        "points": [
+          "Capable of printing on permeable and non-permeable surfaces.",
+          "Purge & Clean push-button automatic maintenance.",
+          "Equipped with a 3.1-inch GLCD operator interface.",
+          "Flexible character control (orientation, inversion, real-time clock/date, repeat print)."
+        ]
+      }
+    ],
+    "specifications": [
+      {
+        "groupName": "Technical Specifications",
+        "fields": [
+          {
+            "label": "Product Models",
+            "value": "DP1200-7-1 (7 dots) / DP1200-7-2 (16 dots)"
+          },
+          {
+            "label": "Maximum Matrix",
+            "value": "7 dots (DP1200-7-1) / 16 dots (DP1200-7-2)"
+          },
+          {
+            "label": "Print Height",
+            "value": "20 mm (DP1200-7-1) / 50 mm (DP1200-7-2)"
+          },
+          {
+            "label": "Character Fonts",
+            "value": "5x7 or 5x5"
+          },
+          {
+            "label": "Stored Messages",
+            "value": "Up to 50"
+          },
+          {
+            "label": "Max Characters per Line",
+            "value": "100 characters"
+          },
+          {
+            "label": "Print Speed",
+            "value": "0.2 m/min – 200 m/min"
+          },
+          {
+            "label": "Print Distance",
+            "value": "5mm – 30mm"
+          },
+          {
+            "label": "Character Control",
+            "value": "Right/left, up/down, positive/inverted sequence; real-time clock/date; auto repeat print"
+          },
+          {
+            "label": "Print Material",
+            "value": "Permeable surface or non-permeable surface"
+          },
+          {
+            "label": "Ink Type",
+            "value": "MEK, N-Propanol, water base ink, or special ink on customer request"
+          },
+          {
+            "label": "Ink System Capacity",
+            "value": "1.3 L ink system (Optional 3–4L ink & 1.3L solvent with ink level control)"
+          },
+          {
+            "label": "Operator Interface",
+            "value": "3.1-inch GLCD"
+          },
+          {
+            "label": "Standard Accessories",
+            "value": "External photoelectric sensor (24V, 3-core)"
+          },
+          {
+            "label": "System Options",
+            "value": "2 Dry inputs, 2 Dry outputs, RS232 protocol, Pressure loss control"
+          },
+          {
+            "label": "Operating Temperature",
+            "value": "0–65°C"
+          },
+          {
+            "label": "Relative Humidity",
+            "value": "10–90% (non-condensing)"
+          },
+          {
+            "label": "Power Supply",
+            "value": "100–240 VAC ±10%, 50Hz"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "tij1800-hand-thermal-inkjet-printer",
     "slug": "tij1800-hand-thermal-inkjet-printer",
     "name": "TIJ1800-Hand Thermal Inkjet Printer",
@@ -9,10 +153,12 @@
     "summary": "Compact and portable hand-held thermal inkjet printer equipped with a 4.3-inch touchscreen, automatic ink identification, and capability to print up to 6 lines of text and barcodes.",
     "pdfUrl": "/pdfs/products/brochure_TIJ1800_Hand_Coding&Marking_Machine.pdf",
     "images": {
-      "main": "/images/products/tij1800-hand-thermal-inkjet-printer/main.jpeg",
+      "main": "/images/products/tij1800-hand-thermal-inkjet-printer/main.png",
       "gallery": [
-        "/images/products/tij1800-hand-thermal-inkjet-printer/view-1.jpeg",
-        "/images/products/tij1800-hand-thermal-inkjet-printer/view-2.jpeg"
+        "/images/products/tij1800-hand-thermal-inkjet-printer/veiw-3.png",
+        "/images/products/tij1800-hand-thermal-inkjet-printer/view-1.png",
+        "/images/products/tij1800-hand-thermal-inkjet-printer/view-2.png",
+        "/images/products/tij1800-hand-thermal-inkjet-printer/view-4.png"
       ]
     },
     "advantages": [
@@ -116,8 +262,10 @@
     "images": {
       "main": "/images/products/tij1800-mini-plus/main.png",
       "gallery": [
+        "/images/products/tij1800-mini-plus/veiw-4.png",
         "/images/products/tij1800-mini-plus/view-1.png",
-        "/images/products/tij1800-mini-plus/view-2.png"
+        "/images/products/tij1800-mini-plus/view-2.png",
+        "/images/products/tij1800-mini-plus/view-3.png"
       ]
     },
     "advantages": [
@@ -234,7 +382,8 @@
       "main": "/images/products/dp2000/main.png",
       "gallery": [
         "/images/products/dp2000/front-view.png",
-        "/images/products/dp2000/heads-view.png"
+        "/images/products/dp2000/heads-view.png",
+        "/images/products/dp2000/view-1.png"
       ]
     },
     "advantages": [
@@ -382,7 +531,9 @@
     "images": {
       "main": "/images/products/tij1800-a200/main.png",
       "gallery": [
-        "/images/products/tij1800-a200/line-setup.png"
+        "/images/products/tij1800-a200/line-setup.png",
+        "/images/products/tij1800-a200/veiw-1.png",
+        "/images/products/tij1800-a200/veiw-2.png"
       ]
     },
     "advantages": [
@@ -527,7 +678,8 @@
       "main": "/images/products/co2-laser-marking-machine/main.png",
       "gallery": [
         "/images/products/co2-laser-marking-machine/view-1.png",
-        "/images/products/co2-laser-marking-machine/view-2.png"
+        "/images/products/co2-laser-marking-machine/view-2.png",
+        "/images/products/co2-laser-marking-machine/view-3.png"
       ]
     },
     "advantages": [
@@ -685,7 +837,8 @@
     "images": {
       "main": "/images/products/fibre-laser-marking-machine/main.png",
       "gallery": [
-        "/images/products/fibre-laser-marking-machine/view-1.png"
+        "/images/products/fibre-laser-marking-machine/view-1.png",
+        "/images/products/fibre-laser-marking-machine/view-2.png"
       ]
     },
     "advantages": [
@@ -863,7 +1016,8 @@
       "main": "/images/products/handheld-fibre-laser-marking-machine/main.png",
       "gallery": [
         "/images/products/handheld-fibre-laser-marking-machine/view-1.png",
-        "/images/products/handheld-fibre-laser-marking-machine/view-2.png"
+        "/images/products/handheld-fibre-laser-marking-machine/view-2.png",
+        "/images/products/handheld-fibre-laser-marking-machine/view-3.png"
       ]
     },
     "advantages": [
@@ -887,11 +1041,19 @@
     "keyFeatures": [
       {
         "category": "Application Scenarios",
-        "points": ["Studios", "Street stall economy", "Outdoor activity"]
+        "points": [
+          "Studios",
+          "Street stall economy",
+          "Outdoor activity"
+        ]
       },
       {
         "category": "Standard Accessories",
-        "points": ["Lifting bracket", "Power cable", "Data cable"]
+        "points": [
+          "Lifting bracket",
+          "Power cable",
+          "Data cable"
+        ]
       }
     ],
     "specifications": [
@@ -1136,7 +1298,9 @@
     "images": {
       "main": "/images/products/lt900-continuous-inkjet-printer/main.png",
       "gallery": [
-        "/images/products/lt900-continuous-inkjet-printer/view-1.png"
+        "/images/products/lt900-continuous-inkjet-printer/view-1.png",
+        "/images/products/lt900-continuous-inkjet-printer/view-2.png",
+        "/images/products/lt900-continuous-inkjet-printer/view-3.png"
       ]
     },
     "advantages": [
@@ -1243,7 +1407,9 @@
       "gallery": [
         "/images/products/mini-laser-marking-machine/view-1.png",
         "/images/products/mini-laser-marking-machine/view-2.png",
-        "/images/products/mini-laser-marking-machine/view-3.png"
+        "/images/products/mini-laser-marking-machine/view-3.png",
+        "/images/products/mini-laser-marking-machine/view-4.png",
+        "/images/products/mini-laser-marking-machine/view-5.png"
       ]
     },
     "advantages": [
@@ -1374,7 +1540,7 @@
           },
           {
             "label": "File Formats",
-            "value": "BMP, DXF, HPGL, JPEG, PLT"
+            "value": "BMP, DXF, HPGL, png, PLT"
           },
           {
             "label": "Bar codes",
@@ -1422,7 +1588,9 @@
       "main": "/images/products/uv900-series-uv-laser-marking-machine/main.png",
       "gallery": [
         "/images/products/uv900-series-uv-laser-marking-machine/view-1.png",
-        "/images/products/uv900-series-uv-laser-marking-machine/view-2.png"
+        "/images/products/uv900-series-uv-laser-marking-machine/view-2.png",
+        "/images/products/uv900-series-uv-laser-marking-machine/view-3.png",
+        "/images/products/uv900-series-uv-laser-marking-machine/view-4.png"
       ]
     },
     "advantages": [
@@ -1450,7 +1618,10 @@
     "keyFeatures": [
       {
         "category": "Application Scenarios",
-        "points": ["Pillow machines", "Vertical machines"]
+        "points": [
+          "Pillow machines",
+          "Vertical machines"
+        ]
       },
       {
         "category": "Standard Accessories",
